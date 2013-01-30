@@ -76,7 +76,7 @@ class Coleccion{
         $array_return = array(); //Creamos el array que vamos a devolver
         $con = self::$db->query($sql); //Ejecutamos la query y guardamos lo que nos devuelve en $con
         foreach($con as $row){ 
-            $newColeccion = new Alumno($row['nombre'], $row['id_carnet'], $row['id']);
+            $newColeccion = new Coleccion($row['nombre'], $row['id_carnet'], $row['id']);
             $array_return[] = $newColeccion;
         }
         return $array_return;

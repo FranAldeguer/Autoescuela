@@ -7,7 +7,7 @@ class Test{
     public $id_coleccion;
     public $num_preguntas; //int
     
-    static public $arrList = Array('id' => 'Código', 'numero'=>'Número', 'id_coleccion'=>'Carnet', 'num_preguntas'=>'Nº de preguntas');
+    static public $arrList = Array('id' => 'Código', 'numero'=>'Número', 'id_coleccion'=>'Colección', 'num_preguntas'=>'Nº de preguntas');
     static private $db;
     
     public function Test($num_test="", $idcolec="", $num_pre="", $id=""){
@@ -35,12 +35,14 @@ class Test{
     }
     
     public function eliminar(){
+    	//Funciona
         $sql = "DELETE FROM test WHERE id = ".$this->id;
         $consulta = self::$db->prepare($sql);
         $consulta->execute();
     }
     
     public function modificar(){
+    	//Funciona
         $sql = "UPDATE test SET numero = ".$this->numero.", id_coleccion = ".$this->id_coleccion.", num_preguntas = ".$this->num_preguntas." WHERE id = ".$this->id;
         $consulta = self::$db->prepare($sql);
         $consulta->execute();
@@ -66,6 +68,7 @@ class Test{
     }
     
     static function __getTest($arr_obj){
+    	//Funciona
         self::$db = new PDO('mysql:host=localhost;dbname=Autoescuela', 'root', 'root');
         $sql = "SELECT * FROM test WHERE 1 = 1";
         if(isset($arr_obj['id'])){
@@ -80,6 +83,7 @@ class Test{
         if(isset($arr_obj['num_preguntas'])){
             $sql.=" and num_preguntas = ".$arr_obj['num_preguntas'];
         }
+        $sql.=" ORDER BY id_coleccion ASC";
         $array_return = array(); //Creamos el array que vamos a devolver
         $con = self::$db->query($sql); //Ejecutamos la query y guardamos lo que nos devuelve en $con
         foreach($con as $row){ 

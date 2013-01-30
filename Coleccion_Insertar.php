@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Insertar Alumnos</title>
+    <title>Insertar Colección</title>
     <script src="lib/coleccion_scripts.js" type="text/javascript"></script>
     <script src="lib/jquery-1.8.2.min.js" type="text/javascript"></script>
     <meta charset="UTF-8" />
@@ -15,12 +15,12 @@
         include 'header_paneldecontrol.php';
     ?>
     <div class="formulario">
-        <form action="controles/Control_colecciones.php" method="post" align ="center" name ="formalu" id="form_alu">
-            <h2>INSERTAR ALUMNO</h2>
+        <form action="controles/Control_colecciones.php" method="post" align ="center" name ="formcol" id="form_col">
+            <h2>INSERTAR COLECCION</h2>
             <table align ="center">
                 <tr><td>Nombre:</td><td> <input type="text" name="inputnom" id="inputnombre"></td></tr>
                 <tr><td>Carnet:</td><td>
-                    <select name="selectidprof" id="selectidprof">
+                    <select name="selectidcar" id="selectidcar">
                         <option value="0">--SELECCIONA UN CARNET--</option>
                         <?php                            
                             $list_carnet = Carnet::__getCarnets();
@@ -36,11 +36,11 @@
             <input type="hidden" id="inputid" name ="inputid" value="0">
         </form>
     </div>
-    
+    <br>
     <div class="listado">
         <table border = 1 cellspacing=0 cellpadding=2 align="center" id="listadotabla">
             <?php
-                //Esto muestra el encabezado de la tabla con los valores que se le pasan en el array de la clase Alumno
+                //Esto muestra el encabezado de la tabla con los valores que se le pasan en el array de la clase Coleccion
                 foreach(Coleccion::$arrList as $key => $value){
                     $tabla.="<th>".$value."</th>";
                 }
@@ -50,7 +50,6 @@
                 //Con esto se puede usar el objeto del array
                 foreach ($list_col as $objCol){
                     //Convertir un objeto a un array asociativo
-                   // $arrayobj = get_class_vars(get_class($objCol));
                     //Crear los tr y le pone la id del objeto como class
                     $tabla.= "<tr id='".$objCol->{'id'}."'>";
                     foreach (Coleccion::$arrList as $key => $value){
@@ -67,5 +66,7 @@
             ?>
         </table>
     </div>
+    
+    
 </body>
 </html>

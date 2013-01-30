@@ -13,9 +13,9 @@ include 'clases/Profesor.php';
     include 'header_paneldecontrol.php';
     ?>
     <div class="formulario">
-        <form action="controles/Control_profesores.php" method="post" align ="center" name ="formprof" id="formprof">
+        <form action="controles/Control_profesores.php" method="post" align ="center" name ="formprof" id="formprof" >
             <h2>INSERTAR PROFESOR</h2>
-            <table style="text-align: center">
+            <table align = "center">
                 <tr><td>DNI:</td><td> <input type="text" name ="inputdni" id="inputdni"> </td></tr>
                 <tr><td>Nombre:</td><td> <input type="text" name="inputnom" id="inputnombre"></td></tr>
                 <tr><td>Apellidos:</td><td> <input type="text" name="inputape" id="inputapellidos"> </td></tr>

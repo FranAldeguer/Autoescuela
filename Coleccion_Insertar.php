@@ -15,12 +15,12 @@
         include 'header_paneldecontrol.php';
     ?>
     <div class="formulario">
-        <form action="controles/Control_colecciones.php" method="post" align ="center" name ="formcol" id="form_col">
+        <form action="controles/Control_colecciones.php" method="post" align ="center" name ="forminsertar" id="forminsertar">
             <h2>INSERTAR COLECCION</h2>
             <table align ="center">
-                <tr><td>Nombre:</td><td> <input type="text" name="inputnom" id="inputnombre"></td></tr>
+                <tr><td>Nombre:</td><td> <input type="text" name="inputnombre" id="inputnombre"></td></tr>
                 <tr><td>Carnet:</td><td>
-                    <select name="selectidcar" id="selectidcar">
+                    <select name="selectid_carnet" id="selectid_carnet">
                         <option value="0">--SELECCIONA UN CARNET--</option>
                         <?php                            
                             $list_carnet = Carnet::__getCarnets();
@@ -31,7 +31,7 @@
                     </select>
                 </td></tr>
             </table>
-            <input type="button" value="Insertar" id="insertcol" onclick="insertar_modificar()">
+            <input type="button" value="Insertar" id="btninsert" onclick="insertar_modificar()">
             <input type="reset" value="Cancelar" onclick="cancelar()">
             <input type="hidden" id="inputid" name ="inputid" value="0">
         </form>
@@ -46,20 +46,20 @@
                 }
                 $tabla.="<th>Eliminar</th><th>Modificar</th>";
 
-                $list_col = Coleccion::__getColecciones();
+                $listObj = Coleccion::__getColecciones();
                 //Con esto se puede usar el objeto del array
-                foreach ($list_col as $objCol){
+                foreach ($listObj as $obj){
                     //Convertir un objeto a un array asociativo
                     //Crear los tr y le pone la id del objeto como class
-                    $tabla.= "<tr id='".$objCol->{'id'}."'>";
+                    $tabla.= "<tr id='".$obj->{'id'}."'>";
                     foreach (Coleccion::$arrList as $key => $value){
                         //Aquí se rellenan los <td> con los datos del objeto
                         //Y se le pone al class del <td> el nombre del valor que contiene
-                        $tabla.="<td class='".$key."'>".$objCol->{$key}."</td>";
+                        $tabla.="<td class='".$key."'>".$obj->{$key}."</td>";
                     }
                     //Añade el botón de borrar y modificar
-                    $tabla.="<td align='center'><img src='img/borrar.jpg' onclick='borrar(".$objCol->{'id'}.", \"".$objCol->{'nombre'}."\", this)' height='25px' width='25px'></td>";
-                    $tabla.="<td align='center'><img src='img/modificar.png' onclick='cargardatos(".$objCol->{'id'}.")' height='25px' width='25px'></td>";
+                    $tabla.="<td align='center'><img src='img/borrar.jpg' onclick='borrar(".$obj->{'id'}.", \"".$obj->{'nombre'}."\", this)' height='25px' width='25px'></td>";
+                    $tabla.="<td align='center'><img src='img/modificar.png' onclick='cargardatos(".$obj->{'id'}.")' height='25px' width='25px'></td>";
                     $tabla.="</tr>";
                 }
                 echo $tabla;

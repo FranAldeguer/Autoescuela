@@ -2,23 +2,30 @@
 include '../clases/Test.php';
 $id = $_POST['inputid'];
 
-$num = $_POST['inputnum'];
-$num_pre = $_POST['inputpre'];
-$id_col = $_POST['selectidCol'];
+$num = $_POST['inputnumero'];
+$num_pre = $_POST['inputnum_preguntas'];
+$id_col = $_POST['selectid_coleccion'];
 
 $js = $_REQUEST['funcion']; //Esta variable comprueba a que función hay que ir (borrar, modificar…)
-$id_alu = $_REQUEST['id_alu'];
+$id_borrar = $_REQUEST['id_borrar'];
 //Borrar un Alumno
-if($js == "borrar_usuario"){
-	$test = Test::__selecTest($id_alu);
-	$test->eliminar();
+if($js == "borrar_registro"){
+	$objBorrar = Test::__selecTest($id_borrar);
+	$objBorrar->eliminar();
 	return;
 }else{
     //Insertar un nuevo alumno desde Alumnos_Insertar.php
     if($id == 0){
-        $test = new Test($num, $id_col, $num_pre);
+        $objInsertar = new Test($num, $id_col, $num_pre);
 
-        echo $test->insertar();
+        echo $objInsertar->insertar();
+    }
+    if($id != 0){
+    	$objModificar = Test::__selecTest($id);
+    	$objModificar->set_numero($num);
+    	$objModificar->set_num_preguntas($num_pre);
+    	$objModificar->set_id_colecion($id_col);
+    	$objModificar->modificar();
     }
 }
 

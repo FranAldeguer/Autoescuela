@@ -83,7 +83,7 @@ class Test{
         if(isset($arr_obj['num_preguntas'])){
             $sql.=" and num_preguntas = ".$arr_obj['num_preguntas'];
         }
-        $sql.=" ORDER BY id_coleccion ASC";
+        //$sql.=" ORDER BY id_coleccion ASC";
         $array_return = array(); //Creamos el array que vamos a devolver
         $con = self::$db->query($sql); //Ejecutamos la query y guardamos lo que nos devuelve en $con
         foreach($con as $row){ 

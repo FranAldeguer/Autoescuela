@@ -3,19 +3,19 @@ include '../clases/Alumno.php';
 $id = $_POST['inputid'];
 
 $dni = $_POST['inputdni'];
-$nom = $_POST['inputnom'];
-$ape = $_POST['inputape'];
+$nom = $_POST['inputnombre'];
+$ape = $_POST['inputapellidos'];
 $fnac = $_POST['inputfecha_nac'];
-$telf = $_POST['inputtelf'];
+$telf = $_POST['inputtelefono'];
 $mail = $_POST['inputmail'];
-$id_prof = $_POST['selectidprof'];
+$id_prof = $_POST['selectid_profesor'];
 
 $js = $_REQUEST['funcion']; //Esta variable comprueba a que función hay que ir (borrar, modificar…)
-$id_alu = $_REQUEST['id_alu'];
+$id_borrar = $_REQUEST['id_borrar'];
 //Borrar un Alumno
-if($js == "borrar_usuario"){
-    $alu = Alumno::__selecAlum($id_alu);
-    $alu->eliminar();
+if($js == "borrar_registro"){
+    $objBorrar = Alumno::__selecAlum($id_borrar);
+    $objBorrar->eliminar();
     return;
 }else{
     //Insertar un nuevo alumno desde Alumnos_Insertar.php
@@ -23,22 +23,22 @@ if($js == "borrar_usuario"){
         if($telf == ''){
             $telf = 0;
         }
-        $alu = new Alumno($dni, $nom, $ape, $fnac, $telf, $mail);
-        $alu->set_id_prof($id_prof);
+        $objInsertar = new Alumno($dni, $nom, $ape, $fnac, $telf, $mail);
+        $objInsertar->set_id_prof($id_prof);
 
-        echo $alu->insertar();
+        echo $objInsertar->insertar();
     }
     //Modificar un Alumno
     if($id != 0){
-        $alu = Alumno::__selecAlum($id);
-        $alu->set_dni($dni);
-        $alu->set_nombre($nom);
-        $alu->set_apellidos($ape);
-        $alu->set_fecha_nac($fnac);
-        $alu->set_telefono($telf);
-        $alu->set_mail($mail);
-        $alu->set_id_prof($id_prof);
-        $alu->modificar();
+        $objModificar = Alumno::__selecAlum($id);
+        $objModificar->set_dni($dni);
+        $objModificar->set_nombre($nom);
+        $objModificar->set_apellidos($ape);
+        $objModificar->set_fecha_nac($fnac);
+        $objModificar->set_telefono($telf);
+        $objModificar->set_mail($mail);
+        $objModificar->set_id_prof($id_prof);
+        $objModificar->modificar();
     }
 }
 ?>

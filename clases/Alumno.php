@@ -10,8 +10,9 @@ class Alumno{
     public $telefono;
     public $mail;
     public $id_prof;
+    public $pass;
     static private $db;
-    static public $arrList = Array('id'=>'Código', 'dni'=>'DNI', 'nombre'=>'Nombre', 'apellidos'=>'Apellidos', 'fecha_nac'=>'Fecha de Nacimiento', 'telefono'=>'Teléfono', 'mail'=>"Correo Electronico", 'id_prof'=>'Id del profesor');
+    static public $arrList = Array('id'=>'Código', 'dni'=>'DNI', 'nombre'=>'Nombre', 'apellidos'=>'Apellidos', 'fecha_nac'=>'Fecha de Nacimiento', 'telefono'=>'Teléfono', 'mail'=>"Correo Electronico", 'id_prof'=>'Profesor');
 
     public function Alumno($d="", $nom="", $ape="", $fnac="", $tel="", $email="", $id="", $id_p=null){
         self::$db = new PDO('mysql:host=localhost;dbname=Autoescuela', 'root', 'root');
@@ -23,19 +24,22 @@ class Alumno{
         $this->mail = $email;
         $this->id = $id;
         $this->id_prof = $id_p;
+        $this->pass = "autoescuela";
         
     }
 
     public function insertar(){
+    	
+    	$contra = md5($this->pass);
          
         //Funciona
-        $sql= "INSERT INTO alumno(dni, nombre, apellidos, fecha_nac, telefono, mail";
+        $sql= "INSERT INTO alumno(dni, nombre, apellidos, fecha_nac, telefono, mail, pass";
         
         if($this->id_prof != 0){
             $sql.=", id_profesor";
         }
         
-        $sql.=") VALUES('".$this->dni."', '".$this->nombre."', '".$this->apellidos."', '".$this->fecha_nac."', ".$this->telefono.", '".$this->mail."'";
+        $sql.=") VALUES('".$this->dni."', '".$this->nombre."', '".$this->apellidos."', '".$this->fecha_nac."', ".$this->telefono.", '".$this->mail."','".$contra."'";
         
         if($this->id_prof != 0){
             $sql.=",".$this->id_prof."";
@@ -62,11 +66,12 @@ class Alumno{
     }
 
     public function  modificar(){
+    	$contra = md5($this->pass);
         //Funciona
         if($this->id_prof == 0){
             $this->id_prof = "";
         }
-        $sql = "UPDATE alumno SET dni='".$this->dni."', nombre='".$this->nombre."', apellidos='".$this->apellidos."', fecha_nac='".$this->fecha_nac."', telefono=".$this->telefono.", mail='".$this->mail."', id_profesor=".$this->id_prof." WHERE id =".$this->id;
+        $sql = "UPDATE alumno SET dni='".$this->dni."', nombre='".$this->nombre."', apellidos='".$this->apellidos."', fecha_nac='".$this->fecha_nac."', telefono=".$this->telefono.", mail='".$this->mail."', pass = '".$contra."', id_profesor=".$this->id_prof." WHERE id =".$this->id;
         $consulta = self::$db->prepare($sql);
         $consulta->execute();
         return $sql;
@@ -137,6 +142,10 @@ class Alumno{
             $array_return[] = $newAlu;
         }
         return $array_return;
+    }
+    
+    public function seleccionarCarnets(){
+    	
     }
 
     //Metodos para modificar los parametros de las variables de la clase!!

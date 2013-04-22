@@ -58,12 +58,12 @@
                     foreach (Alumno::$arrList as $key => $value){
                         //Aquí se rellenan los <td> con los datos del objeto
                         //Y se le pone al class del <td> el nombre del valor que contiene'alert()'
-                        if ($key == "id_prof"){
-                        	$prof = Profesor::selecProf($obj->{$key});
-                        	$tabla.="<td class='".$key."' style='cursor: pointer'  onclick= \"window.location='http://localhost/ProyectoAutoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\" value =".$prof->get_id().">".$prof->get_nombre()." ".$prof->get_apellidos()."</td>";
-                        }else{
+                        //if ($key == "id_prof"){
+                        	//$prof = Profesor::selecProf($obj->{$key});
+                        	//$tabla.="<td class='".$key."' style='cursor: pointer'  onclick= \"window.location='http://localhost/ProyectoAutoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\" value =".$prof->get_id().">".$prof->get_nombre()." ".$prof->get_apellidos()."</td>";
+                        //}else{
 							$tabla.="<td class='".$key."' style='cursor: pointer'  onclick= \"window.location='http://localhost/ProyectoAutoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\">".$obj->{$key}."</td>";
-						}
+						//}
 						
                     }
                     //Añade el botón de borrar y modificar

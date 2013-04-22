@@ -16,15 +16,15 @@ class Alumno{
 
     public function Alumno($d="", $nom="", $ape="", $fnac="", $tel="", $email="", $id="", $id_p=null){
         self::$db = new PDO('mysql:host=localhost;dbname=Autoescuela', 'root', 'root');
-        $this->dni = $d;
-        $this->nombre = $nom;
+        $this->dni       = $d;
+        $this->nombre    = $nom;
         $this->apellidos = $ape;
         $this->fecha_nac = $fnac;
-        $this->telefono = $tel;
-        $this->mail = $email;
-        $this->id = $id;
-        $this->id_prof = $id_p;
-        $this->pass = "autoescuela";
+        $this->telefono  = $tel;
+        $this->mail      = $email;
+        $this->id        = $id;
+        $this->id_prof   = $id_p;
+        $this->pass      = "autoescuela";
         
     }
 

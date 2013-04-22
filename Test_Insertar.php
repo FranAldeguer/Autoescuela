@@ -56,7 +56,7 @@
                     foreach (Test::$arrList as $key => $value){
                         //Aquí se rellenan los <td> con los datos del objeto
                         //Y se le pone al class del <td> el nombre del valor que contiene
-                        $tabla.="<td class='".$key."' style='cursor: pointer' onClick='alert(".$obj->{'id'}.")'>".$obj->{$key}."</td>";
+                        $tabla.="<td class='".$key."'>".$obj->{$key}."</td>";
                     }
                     //Añade el botón de borrar y modificar
                     $tabla.="<td align='center'><img src='img/borrar.jpg' onclick='borrar(".$obj->{'id'}.", \"".$obj->{'numero'}."\", this)' height='25px' width='25px'></td>";

@@ -1,11 +1,12 @@
-<?php include 'clases/Alumno.php';
-      include 'clases/Profesor.php';?>
+<?	include 'clases/Alumno.php';
+	include 'clases/Profesor.php';?>
 
 <html>
 <head>
     <title>Insertar Alumnos</title>
     <script src="lib/alum_scripts.js" type="text/javascript"></script>
     <script src="lib/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/base.css" type="text/css" media="all"> 
     <meta charset="UTF-8" />
 </head>
 <body>
@@ -15,17 +16,36 @@
     <div class="formulario">
         <form action="controles/Control_alumnos.php" method="post" align ="center" name ="forminsertar" id="forminsertar">
             <h2>INSERTAR ALUMNO</h2>
-            <table align ="center">
-                <tr><td>DNI:</td><td> <input type="text" name ="inputdni" id="inputdni"> </td></tr>
-                <tr><td>Nombre:</td><td> <input type="text" name="inputnombre" id="inputnombre"></td></tr>
-                <tr><td>Apellidos:</td><td> <input type="text" name="inputapellidos" id="inputapellidos"> </td></tr>
-                <tr><td>Fecha de nacimiento:</td><td> <input type="text" name="inputfecha_nac" id="inputfecha_nac"></td></tr>
-                <tr><td>Telefono:</td><td> <input type="text" name="inputtelefono" id="inputtelefono"></td></tr>
-                <tr><td>E-Mail:</td><td> <input type="text" name="inputmail" id="inputmail"></td></tr>
-                <tr><td>Profesor:</td><td>
-                    <select name="selectid_profesor" id="selectid_profesor">
+            <div class = "registro_fila">
+                <div class = "registro_form_eti">DNI:</div>
+                <div class = "registro_form_campo"><input type="text" name ="inputdni" id="inputdni"></div>
+            </div>
+            <div class="registro_fila">
+            	<div class="registro_form_eti">Nombre:</div>
+            	<div class="registro_form_campo"><input type="text" name="inputnombre" id="inputnombre"></div>
+            </div>
+            <div class="registro_fila">
+            	<div class="registro_form_eti">Apellidos:</div>
+            	<div class="registro_form_campo"><input type="text" name="inputapellidos" id="inputapellidos"></div>
+            </div>
+            <div class="registro_fila">
+            	<div class="registro_form_eti">Fecha de nacimiento:</div>
+            	<div class="registro_form_campo"><input type="text" name="inputfecha_nac" id="inputfecha_nac"></div>
+            </div>
+            <div class="registro_fila">
+            	<div class="registro_form_eti">Telefono:</div>
+            	<div class="registro_form_campo"><input type="text" name="inputtelefono" id="inputtelefono"></div>
+            </div>
+            <div class="registro_fila">
+            	<div class="registro_form_eti">E-Mail:</div>
+            	<div class="registro_form_campo"><input type="text" name="inputmail" id="inputmail"></div>
+            </div>
+            <div class="registro_fila">
+            	<div class="registro_form_eti">Profesor:</div>
+            	<div class="registro_form_campo">
+                	<select name="selectid_profesor" id="selectid_profesor">
                         <option value="0">--SIN PROFESOR--</option>
-                        <?php                            
+                        <?
                         	$arr = Array('practico' => '1');
                             $list_prof = Profesor::__getProfesores($arr);
                             foreach ($list_prof as $objprof){
@@ -33,10 +53,15 @@
                             }
                         ?>
                     </select>
-                </td></tr>
-            </table>
-            <button type="button" id="btninsert" onclick="insertar_modificar()">Insertar</button>
-            <button type="reset" onclick="cancelar()">Cancelar</button>
+            	</div>
+            </div>
+            
+            <div class="form_btns">
+                <button type="button" id="btninsert" onclick="insertar_modificar()">Insertar</button>
+	            <button type="reset" onclick="cancelar()">Cancelar</button>
+            </div>
+                
+           
             <input type="hidden" id="inputid" name ="inputid" value="0">
         </form>
     </div>
@@ -44,6 +69,7 @@
     <div class="listado">
         <table border = 1 cellspacing=0 cellpadding=2 align="center" id="listadotabla">
             <?php
+            	// TODO En vez de hacerlo por tabla, hacerlo por divs
                 //Esto muestra el encabezado de la tabla con los valores que se le pasan en el array de la clase Alumno
                 foreach(Alumno::$arrList as $key => $value){
                     $tabla.="<th>".$value."</th>";

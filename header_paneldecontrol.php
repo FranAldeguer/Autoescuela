@@ -1,18 +1,18 @@
 <html>
     <body>
         <p align="center">
-            <input type="button" value="Alumnos" onclick="window.location='http://localhost/ProyectoAutoescuela/Alumno_Insertar.php'">
-            <input type="button" value="Profesores" onclick="window.location='http://localhost/ProyectoAutoescuela/Profesor_Insertar.php'">
-            <input type="button" value="Carnets" onclick="window.location='http://localhost/ProyectoAutoescuela/Carnet_Insertar.php'">
-            <input type="button" value="Entrega" onclick="window.location='http://localhost/ProyectoAutoescuela/Entrega_Insertar.php'">
+            <button type="button" onclick="window.location='http://localhost/ProyectoAutoescuela/Alumno_Insertar.php'">Alumnos</button>
+            <button type="button" onclick="window.location='http://localhost/ProyectoAutoescuela/Profesor_Insertar.php'">Profesores</button>
+            <button type="button" onclick="window.location='http://localhost/ProyectoAutoescuela/Carnet_Insertar.php'">Carnets</button>
+            <button type="button" onclick="window.location='http://localhost/ProyectoAutoescuela/Entrega_Insertar.php'">Entrega</button>
            	<!--   
             <input type="button" value="Examen Teórico" onclick="window.location='http://localhost/ProyectoAutoescuela/Examteorico_Insertar.php'">
             Examen Práctico
             <input type="button" value="Practica" onclick="window.location='http://localhost/ProyectoAutoescuela/Practica_Insertar.php'">
             -->
-            <input type="button" value="Test" onclick="window.location='http://localhost/ProyectoAutoescuela/Test_Insertar.php'">
-            <input type="button" value="Coleccion" onclick="window.location='http://localhost/ProyectoAutoescuela/Coleccion_Insertar.php'">
-            <input type="button" value="Lista de precios" onclick="window.location='http://localhost/ProyectoAutoescuela/Precio_Insertar.php'">
+            <button type="button" onclick="window.location='http://localhost/ProyectoAutoescuela/Test_Insertar.php'">Test</button>
+            <button type="button" onclick="window.location='http://localhost/ProyectoAutoescuela/Coleccion_Insertar.php'">Coleccion</button>
+            <button type="button" onclick="window.location='http://localhost/ProyectoAutoescuela/Precio_Insertar.php'">Lista de precios</button>
         </p>
     </body>
 </html>

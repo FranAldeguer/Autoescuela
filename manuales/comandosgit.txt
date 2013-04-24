@@ -1,0 +1,32 @@
+----- Comandos Git -----
+
+-- ESTADO DE GIT --
+git status -> ver esl estado de los archivos y las ramas
+
+git fetch -> obtener información del repositorio
+
+-- COMANDOS BASICOS --
+git pull -> avanar a la versión mas moderna del servidor
+
+git add archivo.php -> añade el archivo a una lista para que se "suba" en el proximo commit
+
+git commit -> sube tus archivos a tu repositorio local
+
+git push -> sube los archivos al repositorio compartido. Avanza (actualiza) la versión del servidor
+
+git checkout archivo.php -> deshace todos los cambios que se hayan realizado desde el ultimo commit
+
+git rm archivo -> añade el archivo a una lista para eliminarlo del repositorio compartido en el proximo commit y lo elimina del repositorio local
+
+-- RAMAS --
+git checkout -b nombre_rama -> crea una nueva rama
+
+git checkout nombre_rama -> cambia a otra rama
+
+git branch -d nombre_rama ->eliemina la rama
+
+git branch -> listado con todas las ramas
+
+git branch -r -> listado con las ramas remotas
+
+git checkout -b nombre_rama origin/nombre_rama_remota -> crea la rama local nombre_rama y la "ancla" (seguimiento) con la rama remota nombre_rama_remota y cada vez que se actualiza una, se actualiza la otra. (La local sigue a la remota, pero no al reves)

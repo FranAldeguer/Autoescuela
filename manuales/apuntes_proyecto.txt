@@ -1,0 +1,9 @@
+----- Apuntes proyecto -----
+
+-- Clases --
+
+*** FORMULARIO ***
+.registro_fila -> filas para un formulario dentro habrá un label y un input
+.registro_form_label -> etiqueta del formulario
+.registro_fomr_campo -> el campo con el valor del formulario (input, select, check…)
+.fomr_btns -> botones de los formularios

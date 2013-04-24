@@ -1,0 +1,26 @@
+.registro_form_eti{
+	color: black;
+	float: left;
+}
+
+.registro_form_campo{
+	text-align: right;
+}
+
+.registro_fila{
+	/*width: 300px;*/
+	background-color: orange;
+}
+
+.form_btns{
+
+}
+
+.formulario{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:400px;
+    background-color:#FFCCFF;
+    text-align:center; 
+}

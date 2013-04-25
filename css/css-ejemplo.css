@@ -1,0 +1,2720 @@
+/* AVISO IMPORTANTE: No modificar ni a�adir nada en este fichero CSS */
+
+
+td {
+	text-align    : left;
+	vertical-align : top;
+}
+
+.spacer {
+	clear : both;		
+}
+
+
+.farticulo_art_fa_layout {
+  width : 100%;
+}
+
+
+.farticulo_art_fa_img {
+	width : 100%;
+	text-align:center;
+}
+
+.farticulo_art_precio_img {
+	width : 20px;
+}
+
+.no_registro {
+	margin-top : 20px;
+	text-align:right;
+	
+}
+
+
+
+.farticulo_art_precio_img_alta {
+	height : 20px;
+}
+
+.tablaPrecios {
+	margin-bottom : 10px;
+	border-collapse: collapse;
+}
+
+.tablaPrecios  td {
+	padding : 1px;
+	border  : 1px solid #808080;
+	white-space : nowrap;
+	
+}
+
+.login_tbl input {
+    width : 90%   
+}
+
+
+.tablaPrecios .precio_label {
+	background-color : #000;
+	color: white;
+}
+
+.tablaPrecios .precio_valor {
+	background-color 	: #f7f7f7;
+	font-size			: 12px;
+	font-family			: Verdana;
+	font-weight			: bold;
+	color				: #00008b;
+	width				: 80px;
+	text-align 			: right;
+}
+
+.tablaPrecios .precio_divisa2 {
+	background-color : #FFF;
+}
+
+.tablaPrecios .precio_divisa2 .precio_valor {
+	font-size: 10px; 
+	font-family: Verdana; 
+	text-align:  right; 
+	color: #000000;
+	font-weight : bold;
+	background-color : #f7f7f7;
+	
+}
+      			
+.tablaPrecios .precio_oferta{
+	background-color : #FFF;           				
+}
+      			
+.tablaPrecios .precio_oferta_lbl {
+	color            : Red;
+	background-color : #FFE4E1;
+	text-align       : right;
+}
+      			
+.tablaPrecios .precio_oferta_dto {
+	color            : #ffffff;
+	background-color : #ff0000;
+	font-weight      : bold;
+	border           : 0;
+	font-size        : 9px;
+	width            : 30px;
+	font-family      : Verdana,Arial;
+}
+      			
+.tablaPrecios .precio_oferta_valor{
+	font-size: 12px; 
+	font-family: Verdana; 
+	font-weight: bold; 
+	text-align: right; 
+	color: Red; 
+}
+
+.tablaPrecios .precio_comprar {
+	background-color : #FFF;
+	text-align : right;
+}
+
+.tablaPrecios .precio_comprar_disponibilidad {
+	margin-right : 6px;
+}
+    			
+.tablaPrecios .precio_comprar_input {
+	font-family      : Verdana, Arial, sans-serif;
+	background-color : #F8F9FB;
+	border           : 1px solid #3399cc;
+	font-weight      : bold;
+	font-size        : 11px;
+	text-align 		: right;
+}
+
+.tablaPrecios .precio_puntos_lbl {
+	font-weight : bold;
+}
+
+.tablaPrecios .precio_puntos_valor {
+	font-size: 10px; 
+	font-family: Verdana; 
+	text-align: right; 
+	color: #000000; 
+}
+
+.precio_disp {
+	margin : 0;
+}
+
+.precio_disp td {
+	background-color : #fff4ca;
+}
+
+.precio_disp_valor {
+	font-size: 10px; 
+	font-family: Verdana; 
+	border: 1px; 
+	text-align: 
+	right; color: #0033cc; 
+}
+
+.variacion {
+	text-align : center;
+}
+
+.farticulos_art_tipo_select td {
+	vertical-align : top;
+}
+
+.inicial {
+	text-align : center;
+}
+
+.select_unico {
+	font-size : 8pt;
+	font-family : courier new;
+}
+.select_unico option {
+	font-size : 8pt;
+	font-family : courier new;
+}
+
+.tablaPrecios .precio_comprar img {
+	border: 0;
+}
+      			
+           			
+.caract_lbl {
+    margin-right : 10px;	
+}
+
+.farticulos_art_selects {
+	text-align : center;	
+	
+}
+
+.farticulo_art_selects_caract {
+	margin-bottom : 4px;
+	
+}
+
+.caract_lbl {
+	font-weight : bold;
+	width : 60px;
+	
+}
+
+.farticulos_art_selects {
+	width : 200px;
+	float : left;		
+}
+
+.farticulo_art_selects_selecciona {
+	text-align  : left;
+	font-weight	: bold;	
+}
+
+
+/* Precios en mosaico */
+
+.farticulo_art_precios_mosaico .variacion {
+	width  : 150px;
+	float  : left;
+	background-color: #EFEFEF;
+	margin : 0 4px 4px 4px;
+	border: 1px solid gray;
+	
+}
+
+.farticulo_art_precios_mosaico .variacion .imagen {
+	border-bottom : 1px dashed gray;	
+	width : 150px;
+	height : 150px;
+	text-align : center;
+	vertical-align : middle;
+		
+}
+
+
+.farticulo_art_precios_mosaico .variacion .tbl_imagen {
+	width : 100%;	
+	height : 100%;
+}
+
+
+
+.farticulo_art_precios_mosaico .variacion .imagen img {
+	border: 0;
+
+}
+	
+.farticulo_art_precios_mosaico .variacion .imagen_ancha img {
+	width : 140px;
+	
+} 
+	
+.farticulo_art_precios_mosaico .variacion .imagen_alta img {
+	height : 140px;
+	
+}
+
+.farticulo_art_precios_mosaico .variacion .datos {
+	
+	padding    : 4px;
+	text-align : center;
+	background-color : white;
+	
+}
+
+
+
+.farticulo_art_precios_mosaico .variacion .datos .caract {
+	display : block;
+}
+
+.farticulo_art_precios_mosaico .variacion .datos .caract_name {
+	margin-right : 4px;
+	font-weight : bold;
+}
+
+.farticulo_art_precios_mosaico .variacion .datos .disponibilidad,
+.farticulo_art_precios_mosaico .variacion .datos .puntos{
+	display : block;
+	font-style : italic;
+	color : gray;
+}
+
+.farticulo_art_precios_mosaico .variacion .datos .precio_oferta {
+	color : red;
+	font-size : 12px;	
+	font-weight : bold;
+	display : block;
+	text-align : centeR;
+	margin-bottom : 5px;
+}
+
+.farticulo_art_precios_mosaico .variacion .datos .precio {
+	font-size : 12px;	
+	font-weight : bold;
+	display : block;
+	text-align : centeR;
+	margin-bottom : 5px;
+	color : navy;
+	
+}       			
+
+.farticulo_art_precios_mosaico .variacion .datos .divisa {
+	margin-left : 4px;	
+}
+
+.precios_spacer {
+	clear : both;	
+}
+
+
+
+#web_cerrada_msg {
+	position : absolute;
+	background-color : #ffffe1 ;
+	border:3px solid black;
+	padding : 20px;
+	text-align : center;
+	font-weight : bold;	
+	font-size : 14px;
+	right: 5px;
+	top : 5px;  	
+
+}
+
+/*  MOSAICO  */
+ 
+.mosaico td {
+	vertical-align : top;	
+	padding : 10px;
+}
+
+.mosaico_imagen_ficha img {
+	margin: 0;
+}
+
+.mosaico_imagen {
+	width : 100px;
+}
+
+.mosaico_imagen_alta {
+	height : 100px;	
+}
+
+.mosaico_imagen_area {
+	width: 110px;
+	height: 110px;
+	float: left;
+	
+	text-align: center;
+	cursor: pointer;
+	margin: 10px 1px 1px 0;
+}
+
+.mosaico_imagen_area img {
+	clear:  both;
+	margin : 0;
+}
+
+.mosaico_imagen_desc {
+	color : gray;
+	font-style : italic;
+	width : 100px;
+	overflow: hidden;
+	white-space : nowrap;
+}
+
+.mosaico_imagen_desc_caract {
+    margin-right : 4px;
+}
+
+.ped_form_obs {
+	
+	margin : 10px;	
+}
+
+.ped_form_obs_eti {
+	display : block;
+	font-weight : bold;
+}
+
+.ped_form_obs_inp {
+	display : block;
+	text-align : center;
+}
+
+.ped_form_obs_inp textarea {
+	width : 70%;	
+}
+
+
+.lst_orders {
+	width : 100%;
+	border: 1px solid gray;
+	background-color : #EFEFEF;	
+	text-align : center;
+}
+
+
+
+.lst_orders ul {
+	margin : 0;
+	padding : 5px;
+	list-style : none;
+	
+}
+
+.lst_orders li {
+	display : inline;
+	padding : 2px;
+	margin-left : 10px;
+		
+}
+
+.lst_orders .selected a {
+	font-weight: bold;
+}
+
+.lst_orders_link {
+	color : blue;
+	text-decoration : underline;
+}	
+
+/* Buscador avanzado */
+.buscador .buscador_avanzado {
+	text-align : center;	
+}
+
+.buscador .buscador_avanzado a {
+	color : blue;
+	text-decoration : underline;
+}
+
+
+.buscador_avanzado .cabecera {
+	font-weight : bold;
+	font-size : 1.5em;
+	border-bottom : 1px dashed gray;
+	padding-bottom : 10px;
+	margin-bottom : 10px;
+}
+
+.buscador_avanzado .campo {
+	margin-bottom : 8px;	
+}
+
+.buscador_avanzado .campo .lbl {
+	display : block;
+	float   : left;
+	width 	: 80px;
+}
+
+.buscador_avanzado .campo_cadena input {
+	width : 250px;
+}
+
+
+.buscador_avanzado .campo_cadena select {
+	display : none;
+}	
+
+
+
+.buscador_avanzado select {
+	font-size : 13px;
+	font-family : arial;
+	height : 26px;
+}
+
+
+.buscador_avanzado .buscar {
+	border-top : 1px dashed gray;
+	padding-top : 10px;
+	margin-top : 10px;
+	text-align : right;
+}
+
+.campo_orden select {
+	margin-right: 4px;
+	
+}
+.ped_det_pvp_base {
+	color : red;
+	text-decoration : line-through;
+	margin-right : 4px;	
+}
+
+.ped_det_pvp, .ped_det_tot {
+	width : 60px;
+}
+.ped_det_bon td,
+.ped_det_bon {
+	text-align : center;	
+	padding : 10px;
+	vertical-align : middle;
+}
+
+.ped_det_iva {
+	width : 32px;
+}
+
+.ped_det_iva ,.ped_det_iva_base {
+	text-align   : right;
+	white-space  : nowrap;
+	padding-left : 10px;
+	
+}
+.ped_det_sub_val {
+	text-align : right;
+}
+
+
+.ped_det_sub_val, 
+.ped_det_sub_eti {
+	font-weight : bold;
+}
+.ped_det_tot_linea td {
+	padding : 4px;
+}
+
+.ped_det_bon .utilizado,
+.ped_det_bon .codigo {
+	color : blue;
+	margin-right : 10px;	
+}
+
+.ped_det_bon .codigo {
+	font-weight: bold;
+	font-size : 1.25em;	
+}
+
+.ped_det_bon  .general {
+	padding : 10px;
+	font-weight : bold;
+	color : navy;
+	font-size : 13px;	
+}
+
+.ped_det_bon .error {
+	display : block;
+	color : red;
+		
+}
+
+.ped_det_imp_eti {
+	color : black;
+}
+
+.ped_det_imp_val, 
+.ped_det_imp_eti {
+	text-align : right;
+}
+
+.ped_det_bon input {
+	width : 100px;
+	font-size : 18px;
+	color : #353535;
+	
+}
+
+.ped_det_bon .link,
+.ped_det_bon .link_quitar  {
+	padding : 2px;
+	border: 1px solid black;
+	margin-left : 8px;
+	background-color : #EFEFEF;
+			
+}
+
+.registro_obl {
+	color : red;	
+}
+
+.registro_sep td {
+	vertical-align : middle;
+	padding-bottom : 7px;	
+}
+
+.registro_sep span {
+	border-bottom : 1px dashed gray;	
+	display : block;
+	width : 100%;
+}
+#loading td {
+	text-align : center;
+	
+}
+
+.body_mas_imgs {
+	background-color : white !important;
+	background-image : none !important;
+	
+}
+
+.sec_cab_link {
+	color : white;
+	text-decoration : none;	
+}
+
+.tablaPrecios .pvr_label {
+	background-color: #EFEFEF;
+	color : black;
+	padding-top : 4px;
+	padding-bottom : 4px;
+	font-size : 7.5pt;
+}
+
+
+.tablaPrecios .pvr_valor {
+	text-align : right;
+	text-decoration: line-through;
+	color : gray;
+	font-size : 12px;
+	padding-right : 2px;
+}
+
+.cp_overlay {
+	background-color : gray;
+	z-index : 600;
+	opacity : 0.90;
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	filter:alpha(opacity=90);
+	 
+}
+
+.escaparate_noticias .archivo a {
+	text-decoration : none;
+}
+
+.cesta_tabla {
+	border-collapse : collapse;
+}
+
+.cesta_tabla .cabeceras .cabecera {
+	border : 1px solid white;
+}
+ 
+.farticulo_art_precio_ahorro {
+	font-size : 10px;
+	color : white;
+	background-color : #cc0000;
+}
+
+.farticulo_art_precio_anterior {
+	text-decoration : line-through;
+}
+.farticulo_art_precio_divisa2{
+	font-size: 10px; 
+	color: #00008b; 
+}
+.farticulo_art_tec a{
+	text-decoration : none;
+}
+
+
+
+
+.farticulo_art_precios_precio span {
+	margin-bottom : 4px;
+	margin-right : 4px;
+}
+
+
+.cab_temp {
+	display : none;	
+}
+
+.body_popup {
+	background-color: white;
+	background-image : none ;
+	
+}
+
+.envio_pedido_ok {
+	font-size : 14px;
+	
+}
+
+.envio_pedido_error{
+	font-size : 14px;
+	
+}
+.fcat_articulo_rec_pvp {
+	font-weight : bold;
+}
+.fcat_articulo_rec_div {
+	margin-left : 6px;
+}
+
+.canje_ok {
+	display : none;
+	color : green;
+}
+
+.canje_error {
+	display : none;
+	color : red;
+}
+
+#numPuntos {
+	margin-right : 6px;	
+}
+
+#ficha_cliente_datos_botones button {
+	margin-left : 10px;
+}
+
+/**
+ * Mapa web
+ * 
+ */
+
+.mapaweb {
+	padding : 10px;
+	
+}
+
+.mapaweb_lista {
+	padding : 0;
+	margin : 0;	
+}
+
+.mapaweb_cat {
+	list-style:none;
+	margin : 0;
+	padding : 0;
+	margin-left:20px;	
+}
+
+.mapawebcat_1 {
+	margin-left: 0;
+	border-top:1px solid #BBBBBB;
+	margin-top : 10px;
+	padding-top  : 10px;
+}
+
+.mapawebcat_2 { padding-left : 20px; }
+.mapawebcat_3 { padding-left : 40px; }
+.mapawebcat_4 { padding-left : 60px; }
+.mapawebcat_5 { padding-left : 80px; }
+.mapawebcat_6 { padding-left : 100px; }
+.mapawebcat_7 { padding-left : 120px; }
+.mapawebcat_8 { padding-left : 140px; }
+.mapawebcat_9 { padding-left : 160px; }
+.mapawebcat_10 { padding-left : 180px; }
+
+.mapaweb_cat_link1 {
+	font-weight : bold;
+	font-size : 1.6em;	
+}
+
+.mapaweb_cat_link2 {
+	font-weight : bold;
+	font-size : 1.3em;	
+	margin-bottom : 5px;
+	margin-top : 5px;
+	display : block;
+}
+.mapaweb_paginas {
+	text-align 	: center;
+	
+}
+.mapaweb_pagina {
+margin-right : 5px;
+
+}
+.mapaweb .pagina_actual {
+font-weight : bold;
+font-size : 1.2em;
+}
+
+.zona_izquierda,
+.zona_central,
+.zona_derecha {
+text-align : left;
+}
+.farticulo_art_img_mosaico_div {
+	
+	padding : 5px;
+	float : left;
+	width : 100px;
+	height : 100px;
+	
+}
+
+.farticulo_art_img_mosaico_img {
+	border:0;
+	margin : 0 !important;
+        width : 90px;
+}
+
+.farticulo_art_img_mosaico_img_alta {
+	border:0;
+	margin : 0 !important;
+        height: 90px;
+}
+
+
+
+
+.mosaico_html_imagen {
+	width : 100px;
+	border : 0 solid  black;	
+}
+.mosaico_html_texto {
+	width : 100px;
+	line-height : 100px;
+	border : 1px solid  black;	
+	
+}
+
+.esc_fart_precios {
+	text-align : center;
+}
+
+.esc_fart {
+   	display : inline-table;
+}
+
+.farticulo_igms_img img {
+	margin : 10px;
+	width : 150px;
+}
+
+
+.web_zonas {
+      border-collapse : collapse;
+}
+
+.zona_izquierda,
+.zona_sep_izq,
+.zona_central,
+.zona_sep_dcha,
+.zona_derecha {
+border:3px solid white;
+}
+
+.lst_art #lst_caracts {
+	
+	background-color: #EFEFEF;
+	border: 1px solid #353535;
+	border-top : 0;
+	padding:4px;
+	text-align : right;
+}
+
+
+.lst_art #lst_caracts select {
+	margin-right:10px;
+}
+
+.error_recarga {
+	font-size : 1.2em;
+	font-weight : bold;
+	color : red;
+	display : block;
+	padding : 60px;
+}
+
+
+.tpv .tpv_cab span {
+	font-weight :bold;
+	font-size : 1.2em;
+}
+
+.tpv .tpv_txt {
+   margin-top : 10px;
+  
+}
+
+.ped_kiala_eti {
+	text-align : right;
+	vertical-align : middle;
+}
+
+
+
+.ped_info_kiala {
+	font-weight : bold;
+}
+
+.ped_kiala_selection {
+	font-weight:bold;
+	text-decoration : underline;	
+}
+
+.ped_kiala_boton {
+	text-align : right;
+	vertical-align : middle;
+}
+
+.ped_kiala_link {
+	-moz-border-radius		: 3px;
+	-webkit-border-radius	: 3px;
+	border-radius			: 3px;
+	-moz-box-shadow			: 0 3px 3px -4px #000;
+	-webkit-box-shadow		: 0 3px 3px -4px #000;
+	box-shadow				: 0 3px 3px -4px #000;
+	background				: #2E37AD;
+	filter					: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353FBA', endColorstr='#1A218B');
+	background				: -webkit-gradient(linear, left top, left bottom, from(#353FBA), to(#1A218B));
+	background				: -moz-linear-gradient(center top , #353FBA, #1A218B);
+	border					: 1px solid #2E37AD;
+	color					: white;
+	cursor					: pointer;
+	display					: inline-block;
+	font-size				: 11px;
+	font-weight				: bold;
+	height					: auto;
+	padding					: 3px 18px;
+	text-align				: center;
+	text-decoration			: none;
+	text-transform			: uppercase;
+	width					: auto;
+}
+
+.ped_kiala_eti {
+	font-weight:bold;	
+}
+
+.ped_ind {
+	text-align: left;
+}
+
+.ped_horario_boton {
+	text-align : right;
+}
+
+.ped_horario_link {
+	-moz-border-radius		: 2px;
+	-webkit-border-radius	: 2px;
+	border-radius			: 2px;
+	-moz-box-shadow			: 0 2px 2px -4px #000;
+	-webkit-box-shadow		: 0 2px 2px -4px #000;
+	box-shadow				: 0 2px 2px -4px #000;
+	background				: #2E37AD;
+	filter					: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353FBA', endColorstr='#1A218B');
+	background				: -webkit-gradient(linear, left top, left bottom, from(#353FBA), to(#1A218B));
+	background				: -moz-linear-gradient(center top , #353FBA, #1A218B);
+	border					: 1px solid #2E37AD;
+	color					: white;
+	cursor					: pointer;
+	display					: inline-block;
+	font-size				: 11px;
+	font-weight				: bold;
+	height					: auto;
+	padding					: 2px 18px;
+	text-align				: center;
+	text-decoration			: none;
+	text-transform			: uppercase;
+	width					: auto;
+	margin-left : 10px;
+}
+.ped_horario_selection{
+	font-weight:bold;
+}
+
+.ped-ind-entrega {
+	font-weight:bold;
+	padding-left : 20px;
+}
+
+
+.horarios-body {
+	padding : 10px;
+}
+		
+.horarios-area {
+	border				: 1px solid black;
+	background-color	: white;
+	width 				: 98%;
+	height 				: 90%;
+	margin				: 0 auto;
+}
+
+.horarios-layout {
+	width : 100%;
+
+}
+
+
+.horarios-calendar , .horarios-contenido {
+	padding : 10px;
+	padding-right : 0;
+	text-align : left;
+}
+
+.horarios-calendar  {
+	width : 180px;
+}
+
+.horarios-cabecera {
+	font-weight : bold;
+	font-size : 14px;
+	padding-bottom : 4px;
+	border-bottom : 1px solid black;
+}	
+
+.horarios-listado-enlaces {
+	margin-top : 10px;
+}
+
+.horarios-fecha {
+	font-weight : bold;
+	font-size : 14px;
+	color : blue;
+}	
+
+
+.horario-enlace {
+	display 		: block;
+	color 			: blue;
+	text-decoration : underline;
+	cursor 			: pointer;
+	margin-top 		: 5px;
+}
+
+.horario-enlace-desactivo {
+	display 		: block;
+	color 			: gray;
+	text-decoration : none;
+	cursor 			: default;
+	font-style		: italic;
+}
+
+.horarios-listado-enlaces {
+	overflow: auto;
+}
+
+.fcli_peds_lst_ent .fcli_peds_lst_lbl {
+	text-decoration: underline;	
+	font-weight:bold;
+}
+
+.fcli_peds_lst_ent .fcli_peds_lst_txt {
+	text-decoration: underline;	
+}
+
+.id_previa {
+    text-align : center;
+    padding : 50px;
+}
+
+
+.id_previa_cab {
+  
+  margin : 0 auto;
+  font-weight : bold;
+  font-size : 18px !important;
+  margin-bottom : 10px;
+}
+
+.id_previa_form_area{
+   text-align  : center;  
+}
+
+.id_previa_form td {
+  padding : 4px;
+  vertical-align: middle;
+}
+
+.id_previa_form {
+   margin : 0 auto;
+}
+
+.id_previa_eti {
+    font-weight : bold;
+    text-transform : capitalize;
+}
+
+.id_previa_campo input {
+    border : 1px solid #EFEFEF; 
+    padding : 4px;
+}
+
+.lst_filtro_h1 {
+	display : inline;
+	font-size : 1.5em;
+}
+
+.cesta-bono {
+	text-align : center;
+}
+
+#bono-text {
+	text-align : left;	
+}
+
+.boton-texto-enlace {
+	margin-right : 5px;
+}
+
+.cesta_tabla_campo_unidades_input {
+	text-align : right;
+}
+
+
+.so-msg {
+	position		: fixed;
+	top			: -100px;
+	left			: 0;
+	z-index			: 5000;
+	width			: 100%;
+	background		: #333;
+	background		: rgba(51, 51, 51, .9);
+	color			: #CCC;
+	text-align		: center;
+	margin-left		: -10px;
+	padding-right	: 10px;
+	min-height		: 100px;
+}
+
+.so-msg-tbl {
+	height : 100px;
+	width : 100%;
+}
+
+.so-msg-msg {
+	font-size : 1.6em;
+	color : white;
+	text-align : center;
+	vertical-align : middle;
+}
+
+.so-msg-status {
+	width: 300px;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.so-msg-status .so-msg-lbl {
+	width : 120px;
+	
+	font-size : 1.6em;
+	display : block;
+	
+}
+
+.so-msg-status .so-msg-val {
+	width : 120px;
+	font-size : 1.6em;
+	color : orange;
+	text-align : right;
+}
+
+
+
+.so-msg-link {
+	vertical-align : middle;
+	text-align : center;
+}
+
+.so-msg-link a {
+	width : 120px;
+	color : orange;
+	font-size : 1.6em;
+}
+
+.cesta_tabla .unidades,
+.cesta_tabla .unidades-chg {
+	vertical-align : middle;
+	text-align : right; 
+}
+
+
+
+.cesta_tabla .unidades-chg a{
+	display : block;
+}
+
+.cesta_tabla .cesta-imagen img {
+	max-width : 32px;
+	max-height : 32px;
+	width : 32px;
+	//height : 32px;
+	margin : 4px;
+}
+
+.cesta_tabla .eliminar {
+	vertical-align 	: top;
+	padding-top 	: 4px;	
+}
+
+.cesta_tabla .oferta {
+	text-decoration : line-through;
+	color : gray;	
+}
+
+.ped,
+.ped_dat {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.cesta-mensaje {
+	min-width : 600px;
+	min-height : 250px;
+	font-size : 1.2em;
+}
+
+.cmsg-title {
+	font-weight : bold;
+	text-align : left;
+	font-size : 1.4em !important;
+	padding-bottom : 10px;
+	border-bottom : 1px solid black;
+	margin-bottom : 10px;
+}
+
+.cmsg-imagen {
+	width : 100px;
+	vertical-align : middle;
+	text-align : center;
+}
+.cmsg-imagen-img {
+	margin : 10px;
+	max-height : 78px;
+	max-width : 78px;
+	//width : 78px;
+}
+
+.cmsg-articulos {
+	width : 100%;
+}
+
+.cmsg-nombre {
+	font-weight : bold;
+}
+
+.cmsg-acciones {
+	padding : 10px;
+	border-top : 1px solid black;
+	text-align : right;
+}
+
+
+.cmsg-articulo {
+	padding-bottom : 10px;
+}
+
+
+.cmsg-articulo-table {
+	width : 100%;
+}
+
+.cmsg-totales {
+	text-align : right;
+	border-top : 1px solid black;
+	padding : 4px;
+}
+
+.cmsg-totales-val {
+	
+	font-weight:bold;
+	font-size : 1.2em;
+}
+
+.cmsg-totales-lbl {
+	margin-left : 20px;
+	margin-right : 5px;
+}
+
+.cmsg-precios {
+	
+	font-size : 16px;
+}
+
+.cesta-mensaje .boton_continuar {
+	background-color : gray !important;
+	background-image : none;
+	color : white !important;
+	
+}
+
+.cesta-mensaje .boton_ver_cesta {
+	margin-left : 40px;
+}
+
+
+.cmsg-precio-val,
+.cmsg-unidades-val {
+	font-weight:bold;
+	font-size : 1.2em;
+}
+
+.cmsg-unidades-lbl {
+	margin-left : 10px;
+}
+
+.cmsg-detalle {
+	color : gray;
+}
+
+.cmsg-nombre {
+	font-size : 14px;
+}
+
+.cmsg-articulo-datos {
+	width : 400px !important;
+}
+
+.atr-nombre {
+	
+	padding-right : 10px;
+}
+
+.atr-valor {
+	font-weight:bold;
+}
+
+.cesta .unidades-chg img,
+.cesta-imagen img,
+.cesta .eliminar img {
+	border : 0;
+}
+
+
+.shop-msg {
+	width              : 600px;
+	min-height 		   : 38px;
+	padding            : 10px;
+	text-align         : left;
+	padding-left       : 70px;
+ 	font-size     	   : 1.1em;
+	
+}
+
+.shop-msg-txt {
+	font-size : 1.3em;
+
+}
+
+.shop-msg-buttons {
+	margin-top : 10px;
+	text-align : center;
+	margin-left : -70px;
+
+}
+
+.shop-msg-cancelar {
+	margin-right : 20px;
+}
+
+
+.shop-msg-error {
+	background-image   : url(../graficos/ico_error.png);
+	background-position: 5 50%;
+	background-repeat  : no-repeat;
+}
+
+.shop-msg-info {
+	background-image   : url(../graficos/ico_info2.png);
+	background-position: 5 50%;
+	background-repeat  : no-repeat;
+}
+
+.shop-msg-loading {
+	background-image   : url(../graficos/loading-med.gif);
+	background-position: 5 50%;
+	background-repeat  : no-repeat;
+}
+.shop-msg-palexpress {
+	background-image   : url(../lib/iconos/paypal.png);
+	background-position: 5 50%;
+	background-size:58px 58px;
+	background-repeat  : no-repeat;
+}
+
+.reg-error-cab {
+	font-weight   : bold;
+	font-size     : 1.4em;
+	padding-bottom: 10px;
+	margin-bottom : 10px;
+	border-bottom : 1px solid black;
+}
+
+.cesta-tramitar-externo {
+	margin-top : 10px;
+	margin-bottom : 20px;
+}
+
+
+.cmsg-acciones {
+	text-align : center;
+}
+
+
+
+
+.texto_presupuesto {
+	margin-top : 10px;
+		
+}
+
+.marcas .marcas-cab  {
+	font-size : 1.4em;
+	font-weight : bold;
+
+}
+
+.marcas-lst .spacer { clear : both;}
+
+.marcas-lst .marca-ficha  {
+	float     : left;
+	width     : 32%;
+	height    : 110px;
+	/*border    : 1px solid black;*/
+	text-align: center;
+	margin : 2px;
+	background-color : #FAFAFA;
+}
+
+.marcas-lst .marca-img {
+	max-width : 90%;
+	max-height: 90%;
+	margin    : 10px;
+	border    : 0;
+}
+
+
+.marcas-lst .marca-nombre  {
+	margin-top : 10px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing   : border-box;    
+	box-sizing        : border-box;         
+	padding           : 10px;
+	font-size         : 1.1em;
+	overflow          : hidden;
+	height : 50px;
+}
+
+.marcas-lst .marca-img-area {
+	width : 100%;
+	height : 40px;
+}
+.marcas-lst .marca-img-nodisp {
+	display : none;
+}
+.buscador_marca_todos {
+	display : block;
+}
+
+.ped_det_pun {
+	width : 75px;
+}
+
+.ped_det_pvp {
+	white-space: nowrap;
+}
+
+.fcli_peds_lst_ped{
+	background-color : #EFEFEF;
+	
+}
+
+.fcli_peds_lst_ped td{
+	border-top: 1px solid black;
+}
+
+.fcli_peds_lst_int td {
+	border-bottom:1px solid black;
+}
+
+.farticulo_art_precios_uds_lbl {
+	margin-right : 10px;
+}
+
+.cmsg-select {
+	margin-top : 22px;
+}
+
+.cmsg-select select {
+	padding   : 2px;
+	border    : 1px solid gray;
+	font-size : 14px;
+}
+
+.cmsg-select select option {
+	text-align : right;
+}
+
+.cmsg-log {
+	padding-bottom : 10px;
+}
+
+.cmsg-log-msg {
+	color : red;
+	max-width : 450px;
+}
+
+
+.lst_art_mar_cab {
+	font-weight : bold;
+	font-size : 1.2em;
+}
+
+.lst_art_mar_desc {
+	margin-top : 5px;
+	padding : 5px;
+}
+
+
+
+.descarga_pedido_lbl {
+	font-size : 1.2em;
+	font-weight:bold;
+}
+
+.descarga_fichero {
+	font-size : 1.2em;
+}
+
+.descarga_no_pagado {
+	color : red;
+	font-style : italic;
+	text-decoration:   underline;
+}
+
+.descarga_fichero_img {
+	border:0;
+}
+
+.descarga_botones {
+	text-align : right;
+}
+
+.sec_env_costes_baremos,
+.sec_envios_fpago_costes {
+	width : 100%;
+}
+
+.sec_env_costes_baremos td, 
+.sec_envios_fpago_costes td{    
+    padding : 5px;
+}
+
+.sec_env_costes_baremo_iva,
+.sec_env_costes_baremo_precio {
+	width : 90px;
+	text-align : right;
+}
+
+.sec_env_costes_gratis_nombre,
+.sec_env_costes_baremo_iva {
+	white-space:  nowrap;
+}
+.sec_env_costes_gratis_nombre {
+	text-align  :right;
+}
+
+
+
+.sec_envios_fpago_first td {
+	border-top : 1px solid #DDDCDC;
+	border-bottom : 1px solid white;
+}
+
+.sec_env_costes_baremos {
+	border-bottom : 1px solid #DDDCDC;
+	border-top : 1px solid white;
+}
+.sec_envios_fpago_dest {
+	font-weight : bold;
+}
+
+.farticulos_art_precios_ndias_txt {
+	display : none;
+}
+.idafi_form {
+    width : 340px;
+    margin-top  : 20px;
+    margin-left : 20px;
+}
+
+.idafi_form_eti  {
+    float : left;
+    width : 40px;
+    text-transform: capitalize;
+    
+    color : #323232;
+    font-weight:bold;
+    padding-top  : 2px;
+    margin-right : 10px;
+    
+}
+.idafi_row {
+    margin-bottom : 10px;
+}
+.idafi_buttons {
+   
+    margin-left : 160px;
+}
+
+#idafi_email {
+	width  : 160px;
+}
+
+#idafi_pass {
+	width  : 80px;
+}
+
+.afi_cab_tot,
+.afi_ped_tot,
+.afi_val_total {
+	display : none;	
+}
+
+.afi_contenido {
+    padding: 10px;
+}
+
+.afi_info {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bbb;
+}
+
+.afi_nombre {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.afi_email {
+    font-weight: bold;
+    font-size: 16px;
+    color: gray;
+}
+.afi_ped_cab_year a{
+	font-weight: bold;
+}
+
+.afi_url {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.afi_ped_cab {
+    margin-bottom: 10px;
+}
+
+.afi_ped_cab_eti {
+    float: left;
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.afi_ped_cab_year {
+    padding-top: 5px;
+    float: right;
+}
+
+.afi_ped_cab_year .afi_year_val {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.afi_ped_tbl {
+    width: 100%;
+    border: 1px solid #aaa;
+}
+
+.afi_ped_tbl td {
+    padding: 5px;
+}
+
+.afi_ped_tbl_cab {
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.afi_ped_cab_year .afi_year_val, 
+.afi_ped_cab_year .afi_year_prev, 
+.afi_ped_cab_year .afi_year_next {
+    font-size: 18px;
+}
+
+.afi_val_fecha {
+    text-align: center;
+}
+
+.afi_val_comisionable, .afi_val_tasa, .afi_val_total, .afi_val_comision {
+    text-align: right;
+}
+.afi_ped_tot {
+	font-weight: bold;
+	text-align : right;
+	font-size  : 1.1em;
+}
+
+.afi_cab_ped {
+    text-align: left;
+}
+
+.afi_cab_fec {
+    text-align: center;
+}
+
+.afi_cab_tot, .afi_cab_com, .afi_cab_tas, .afi_cab_comi {
+    text-align: right;
+}
+
+.afi_mes {
+	font-size    : 14px;
+	margin-top   : 10px;
+	margin-bottom: 5px;
+    
+}
+
+.afi_no_ped {
+    text-align: center;
+    padding: 10px;
+}
+
+.afi_ped_tot_pen {
+	font-weight: normal;
+	color      : #AAA;
+}
+
+.afi_cerrar{
+   float:right;
+}
+
+
+.afi_year_totales {
+    margin-top: 10px;
+}
+
+.afi_year_comisiones, .afi_year_pendiente {
+    text-align: right;
+    
+}
+
+.afi_year_comisiones {
+    margin-bottom : 10px;   
+}
+
+.afi_year_totales .afi_year_eti {
+    font-size : 16px;
+    margin-right : 10px;
+}
+
+.afi_year_totales .afi_year_val {
+    font-size : 20px;   
+}
+
+.idafi_cab_comercio {
+	margin-left : 8px;
+}
+
+.registro_form_eti {
+	width     : 100px;
+	text-align: right;
+	padding-top : 15px;
+}
+
+.form_web input,
+.form_web textarea {
+	background-image  : url(../graficos/form-input-back.gif);
+	background-color  : white;
+	background-repeat : repeat-x;
+	
+	border            : 1px solid #B5B8C8;
+	padding           : 2px;
+	font-size         : 14px;
+
+	padding : 4px;
+}
+
+.registro_form .registro_form_input
+.cesta_form .registro_form_input {
+	width : 200px;
+}
+
+
+.form_web input:focus,
+.form_web textarea:focus {
+	outline:none;
+    border-color:#9ecaed;
+    box-shadow:0 0 10px #9ecaed;
+}
+
+
+.botonPaypal {
+	background-color : white;
+}
+
+.boton_area {
+	width : 32%;
+	text-align : center;
+}
+
+
+.cesta-paypal-botones {
+	text-align : right;	
+}
+
+
+.comprar_paso1 {
+	width : 100%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.comprar_paso1_login_area {
+	width : 49.5%;
+	margin-right : 0.5%;
+	float : left;
+
+}
+
+.comprar_paso1_registro_area {
+	float : right;
+	margin-left : 0.5%;
+	width : 49.5%;
+}
+
+.comprar_paso1_login_area .registro_datos {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	padding-left : 20px;
+}
+
+.menu .izquierda,
+.menu .derecha {
+	vertical-align : middle;
+}
+
+#form_opinion table {
+	width : 100%;
+}
+
+#form_opinion .registro_form_input {
+	width : 90%;
+}
+
+.comprar_paso_login_buttons button ,
+.comprar_registro_buttons button {
+	margin-right : 10px;
+}
+
+.registro_cab_copiar_link {
+	margin-right : 10px;
+}
+
+.fcli_datos_val {
+	padding-left : 10px;
+}
+
+.fcli_datos_cab_empresa,
+.fcli_datos_cab_nombre,
+.fcli_datos_cab_apellidos {
+	font-size : 18px;
+
+}
+
+.ped_dat_express .ped_dat_env .ped_data_row_empresa,
+.ped_dat_express .ped_dat_env .ped_data_row_apellidos,
+.ped_dat_express .ped_dat_env .ped_data_row_nif,
+.ped_dat_express .ped_dat_env .ped_data_row_telefono {
+
+	display : none;
+}
+
+
+
+
+#fancybox-outer { 
+        position: relative; 
+        width: 100%; 
+        height: 100%; 
+        background: #fff; 
+        -moz-border-radius:7px 7px 7px 7px; 
+        border-radius:7px 7px 7px 7px; 
+        -webkit-border-radius: 7px 7px 7px 7px; 
+} 
+
+
+
+
+.cesta_botones2 .boton_area {
+    float : left;
+    width : 32%;
+    text-align : center;
+}
+
+.cesta_botones2 {
+    margin-top : 20px;
+    margin-bottom : 20px;
+}
+
+
+.registro_fila_empresa .registro_form_input, .registro_fila_nombre .registro_form_input, .registro_fila_apellidos .registro_form_input, .registro_fila_poblacion .registro_form_input, .registro_fila_provincia .registro_form_input, .registro_fila_email .registro_form_input, .registro_fila_provincia .registro_form_input, .registro_fila_pais .registro_form_input, .registro_fila_direccion .registro_area {
+    width: 250px;
+}
+
+.registro_fila_direccion .registro_area {
+    height: 40px;
+}
+
+.registro_fila_nif .registro_form_input {
+    width: 140px;
+}
+
+.registro_fila_cod_postal .registro_form_input {
+    width: 80px;
+}
+
+.registro_fila_telefono .registro_form_input, .registro_fila_clave .registro_form_input , .registro_fila_claverep .registro_form_input {
+    width: 120px;
+}
+
+#form_login .email_input .registro_form_input {
+    width : 300px;    
+}
+
+.art-tecs,
+.art-tecs div
+ {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+
+}
+
+
+
+.art-tec-icono {
+	text-align   : center;
+	float        : left;
+	margin-right : 10px;
+}
+
+.art-tec-icono img {
+	max-width : 100%;
+}
+
+.art-tec-cab {
+	width            : 100%;
+	background-color : #EFEFEF;
+	float            : left;
+	padding          : 4px;
+}
+
+.art-tec-nombre {
+	text-align : left;
+}
+.art-tec-texto {
+	text-align : left;
+}
+
+.art-tec-imagen {
+	float     : right;
+	max-width : 250px;
+}
+
+.art-tec-imagen img {
+	max-width : 99%;
+}
+
+.art-tec-body {
+	padding : 10px;
+	float : left;
+	width : 100%;
+}
+
+.art-tec {
+	margin-bottom : 10px;
+	width         : 100%;
+	float         :left;
+}
+
+.web_ex {
+	background-color : white;
+	background-image : none;	
+}
+
+/***************************************************************************************************************
+*************************************         estilo_shoponline.js         *************************************
+****************************************************************************************************************/
+
+@import url(shop-base.css);
+@import url(shop-colores.css);
+
+
+/* Columna derecha fija
+3 productos por fila en escaparate*/
+
+
+/* 
+Colores: 
+#222222 (grisaseo oscuro fondos)
+#CC0000 (Rojo)
+#666666 (Gris para algunas letras)
+*/
+
+/**
+Base 
+----------------
+margin
+padding
+width
+height
+float
+clear
+
+
+Tema 
+----------------
+text-decoration
+font-style
+**cabeceras
+font-weight:bold;
+
+
+Colores
+----------------
+background-color
+			 -image
+color
+border-color
+*/
+
+
+
+a {
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a:visited {
+}
+
+button,
+.boton,
+.bt,
+.ped_botones_fin,
+.cesta_presupuesto_boton{
+	font-weight:bold;
+	cursor: pointer;
+}
+
+.cesta_presupuesto {
+text-align:right;
+}
+
+.menu .link {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.menu .link:hover{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.sec_cats1_link{
+	font-weight: bold;
+}
+
+.sec_todos a:hover{
+	text-decoration: underline;
+}
+
+.sec_cats a:hover {
+	text-decoration: none;
+	font-weight:bold;
+}
+
+
+.buscador_cabecera,
+.sec_cab,
+.buscador_marca_cabecera{
+	text-indent : 35px;
+}
+
+.buscador_avanzado,
+.buscador_marca_imagen {
+	text-align:left !important;
+}
+
+.buscador_marca_imagen{
+	margin-top: 0;           /*para contrarestra los margenes inapropiados del estilo comÃÂÃÂºn "buttom" */
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-left: 3px;
+}
+
+/* pie de pÃÂÃÂ¡gina */
+.pie_links a:hover{
+	text-decoration: underline;
+}
+
+.pie_links a{
+	text-decoration: none;
+}
+
+.escaparate_promocion_cabecera,
+.escaparate_articulos_cabecera{
+	font-weight: bold;
+	text-indent : 15px;
+}
+
+.escaparate_noticia_titulo{
+	font-size: 1.2em;
+}
+
+.escaparate_articulos_lst a:hover,
+.escaparate_noticias a:hover{
+	text-decoration: none;
+}
+
+.archivo a:hover{
+	text-decoration: underline;
+}
+
+.esc_fart_nombre {
+	font-weight:bold;
+	text-decoration:none;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*estilo de los precios */
+.esc_fart_precios_ofe_pvp,
+.esc_fart_precios_pvp_val,
+.minicesta_tot_val,
+.art_precio,
+.farticulo_comp_art_precio,
+.farticulo_comp_art_divisa,
+.fcat_articulo_rec_pvp{   
+	font-size:1.6em;
+	
+}
+
+.precio_oferta_valor,
+.tablaPrecios .precio_valor{
+	font-size:1.5em;
+	font-weight: normal;
+}
+
+.precio_oferta_valor{
+	font-size:17px !important;
+}
+
+.lst_art_articulo_importe, 
+.lst_art_articulo_divisa{
+	font-size:1.4em;
+	font-weight: bold;
+}
+
+/* Parte derecha*/
+
+/*estilo de la cesta zona derecha*/
+
+/*------------------------- problemas en base */
+.modulo minicesta{
+	width:  100% !important;
+}
+.minicesta_cab{
+	width: 100%;
+	border: 0px;
+}
+.minicesta_tot_val{
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.minicesta_cab_tit{
+	text-indent : 7px;
+}
+
+.minicesta_cab_tit{
+	text-indent : 7px;
+}
+
+/*---------------------------------*/
+
+
+.zona_derecha a:hover{
+	text-decoration: underline;
+}
+
+.minicesta_cab_tit{
+	text-indent : 7px;
+}
+
+.minicesta_art_eti,
+.minicesta_tot_eti{
+	width: 75%;
+	text-indent : 7px;
+}
+
+/* Area del login*/
+
+.login_tbl_eti{
+	text-indent : 7px;
+}
+
+.login_cab{
+	font-weight:bold;
+	text-indent : 15px;
+}
+
+.mas_vendidos_cab,
+.especiales_cabecera {
+	text-indent : 15px;
+	border:none;
+}
+
+.lst_orders_link{
+	text-decoration: none; 
+}
+
+.lst_art_articulo_nombre,
+.fcat_articulo_rec_nombre{
+	font-size:1.3em;
+	font-weight:bold;
+}
+
+.fcat_articulo_rec_marca,
+.lst_art_articulo_marca,
+.fcat_articulo_rec_pvr,
+.lst_art_articulo_ahorro,
+.esc_fart_ahorro{
+	font-weight: bold;
+}
+
+/* parte central lista de productos tamaÃÂÃÂ±os*/
+.lst_art_articulo_oferta_pvp,
+.lst_art_articulo_ofe_divisa{
+	font-size: 1.6em;
+}
+
+
+/* ESTILOS COMUNES A VARIAS PÃÂÃÂGINAS */
+
+/*letras de cabcera central */
+.noticias_archivo_solapa,
+.cesta_cabecera span,
+.fcon_cab span,
+.idcli_cab span,
+.faqs_cabecera span,
+.como_comprar_cabecera,
+.txt_gar_cab span,
+.sec_env_cond_cab span,
+.cabecera span,
+.farticulo_imgs_cabecera,
+.farticulo_comp_cabecera,
+.farticulo_com_cabecera,
+.todos_cab span,
+.registro_cab span,
+.fcli_datos_cab,
+.descargas_cab span,
+.edicion_datos_cab,
+.texto_cab span,
+.mas_imgs_lst_cab span
+{  /* "como comprar" cabecera no tiene un span asi que se repite*/
+	font-size: 1.7em;
+	font-weight: bold;
+	margin-bottom: 15px;
+	text-indent : 7px;
+	
+}
+
+
+.farticulo_art_solapas #selected{
+	font-weight: bold;
+}
+
+.farticulo_fa{
+		padding-left: 5px;
+		/*antes text-indext*/
+}
+
+.farticulo_art_nombre2{
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+.farticulo_art_caract_cab{
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.farticulo_art_rel_cab{
+	font-weight: bold;
+	font-size:1.4em;
+}
+
+.noticias_archivo_not_fecha{
+	display: block;
+	font-size: 0.9em;
+}
+
+
+.noticias_archivo_not_link{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/* Cesta*/
+.cabeceras{
+	text-indent : 7px;
+	font-weight: bold;
+}
+
+.total{
+	font-weight: bold;
+	border: none;
+}
+
+.pasos li{
+	font-weight:  bold;
+}
+
+
+.id_cli_form_btn button,
+.registro_form_boton{
+	 font-weight: bold;
+	 cursor: pointer;
+}
+
+/* texto GarantÃÂÃÂ­a */
+.txt_gar_comercio,
+.txt_gar_slogan{
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.txt_gar_slogan{
+	font-size:1em;
+	font-weight:normal;
+}
+
+.gar_rsocial{
+	font-weight: bold;
+}
+
+.txt_gar_compra_cab,
+.txt_gar_dev_cab,
+.txt_gar_cond_cab{
+	font-size:1em;
+	font-weight: normal; /*aÃÂÃÂ±adir rojo si falta */
+}
+
+/*Condiciones de EnvÃÂÃÂ­o */
+.sec_env_costes_destinos_cab,
+.sec_envios_fpago_cab{
+	font-weight: bold;
+}
+
+.sec_env_costes_cab,
+.registro_cab{
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.comprar_paso1_login .email_label, .comprar_paso1_login .clave_label {
+	font-weight:bold;
+	text-transform:capitalize;
+}
+
+
+.precio_oferta_lbl{
+	font-weight: bold;
+}
+
+#divIva,
+#divInvInc{
+	font-size:0.8em;
+}
+
+.pvr_valor,
+.pvr_label{
+	font-size: 1em !important;
+}
+
+/* Comparar */
+
+.farticulo_comp_art_nombre,
+.todos_lst_cab {
+	font-size: 1.4em;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.rec_clave_comercio,
+.log_txt,
+.linea_total{
+	font-weight: bold;
+}
+
+.farticulo_com_com_titulo{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+/*  NOTICIAS  */
+
+.fnot_cab span{
+	font-size: 1.2em;
+	line-height:22px;
+	font-weight: bold;
+}
+
+
+/*POLITICA DE PRIVACIDAD */
+
+.texto_cab{
+	font-weight: bold;
+}
+
+.titulo{
+	text-decoration: underline;
+}
+
+.texto_botones_boton{
+	margin-left: 0 !important;
+}
+
+
+/* RECOMENDAR ESTA WEB */
+.recomendacion_de_cabecera,
+.recomendacion_to_cabecera{
+	font-weight: bold;
+	font-size:1.2em;
+	text-transform: capitalize;
+}
+
+.recomendacion_de_label,
+.recomendacion_to_label{
+	text-transform: capitalize;
+	text-align: right;
+}
+
+
+/* Imagen ampliada */
+.mas_imgs_prev_nombre{
+	font-weight: bold;
+}
+
+.eliminar{
+	text-align: center;
+}
+
+/* Precios de la ficha */
+.farticulo_art_precios_noiva{
+	font-size:0.8em;
+}
+
+.farticulo_art_precios_cab_fila{
+	font-weight: bold;
+	text-align: right;
+}
+
+#farticulo_art_precios_cab_precio{
+	font-size: 1em;
+	font-weight: bold;
+	text-indent : 7px;
+	text-align: right;
+}
+
+/*Resumen de la compra */
+.ped_dat_fra_cab,
+.ped_dat_env_cab,
+.ped_det_cab,
+.ped_det_gas_cab{
+	font-weight: bold;
+}
+
+.ped_dat_cli_cab,
+.ped_dat_fra_eti,
+.ped_dat_env_eti,
+.ped_tbl_cab,
+.ped_det_sub_eti{
+	font-weight: bold;
+}
+
+.ped_det_iva_tot input,
+.ped_det_sub_tot input,
+.ped_ctrl_puntos_valor input,
+.ped_ctrl_portes_valor input,
+.ped_ctrl_fpago_valor input,
+.ped_det_tot_val input{
+	text-align: right  !important;
+}
+
+
+.ped_det_sub_tot input,
+.ped_det_sub_tot,
+.ped_det_sub_pun{
+	font-weight: bold;
+}
+
+
+.ped_det_tot_eti,
+.ped_det_tot_val input,
+.ped_det_tot_val{
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+/* CONFIRMACIÃÂÃÂN  */
+.ped_ind_cab{
+	font-weight: bold;
+}
+.ped_fpag_eti{
+	text-decoration: underline;
+	font-size: 1.1em;
+}
+
+.ped_fpag_val{
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+
+/* MenÃÂÃÂº arriba, sesiÃÂÃÂ³n del usuario */
+.fcli_peds {
+	text-align:center;
+}
+
+.fcli_datos_res,
+.fcli_peds_lst_cab{
+	font-weight: bold;
+}
+
+.fcli_peds_tot {
+	font-weight:bold;
+	margin-top:10px;
+	text-align:left;
+}
+
+
+.fcli_peds_lst_introducir{
+	text-align: center;
+}
+
+.fcli_peds_cab{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* paginas */
+.ped_dat_conformidad,
+.ped_ind_cab,
+.ped_det_cab{
+	text-align: left !important;
+}
+
+/* politica de privacidad */
+.texto_txt .titulo{
+	font-weight: bold;
+}
+
+.login_tbl_eti,
+.id_cli_form_eti{
+	text-transform: capitalize;
+}
+
+.ped_botones_link{
+	margin: 5px;
+}
+
+
+#lst_art_pag_current{
+	font-weight:bold;
+}
+
+#fcli_pag_actual,
+#todos_pag_actual{
+	font-weight:bold;
+}
+
+/*------------------- galeria de imagenes -------------------------*/
+
+.mas_imgs_lst_img img{
+	border: none;
+	width: 120px;
+}
+
+#vista{
+	text-align: center;
+	width: 600px;
+}
+
+.mas_imgs_lst{
+		border-right: 1px dotted #DADADA; 
+		padding: 5px;
+}
+
+#imgnombre{
+	font-weight: bold;
+	padding: 5px;
+	text-align: left;
+}
+
+#imgdescripcion{
+	padding-left: 5px;
+	text-align: left;
+}
+
+
+.mas_imgs_lst_img{
+	padding:2px 4px 2px 2px;
+	text-align:center;
+}
+
+.mas_imgs_lst_cab{
+	text-align:center;
+	margin-bottom: 20px;
+	padding-bottom: 3px;
+}
+
+.mas_imgs_lst_img a{
+	font-size:1.1em;
+	font-weight:bold;
+	text-decoration:none;
+	text-align: center
+}
+
+
+/* Hace que no se muestren categorÃÂÃÂ­as */
+#ul_cat_021, 
+#ul_cat_022, 
+#ul_cat_017, 
+#ul_cat_020, 
+#ul_cat_013, 
+#ul_cat_014, 
+#ul_cat_010,
+#ul_cat_005,
+#ul_cat_018,
+#ul_cat_023,
+#ul_cat_TEN,
+#ul_cat_1001
+  {
+	display: none;
+}
+
+.imagen {
+        background-image: url(hd-fondo-azul.gif);
+}
+
+.oferta {
+       color:#949494;
+       margin-right:4px;
+       text-decoration:line-through;
+}
+
+.tablaPrecios .precio_oferta_dto {
+font-size: 25px;
+}
+
+.fart_europadels_texto {
+border: 1px silver solid;
+color: red;
+padding: 2px;
+background-color: #ffffb0;
+}
+
+.marca-img {
+border: none;
+}
+
+/* estilos para el boton de pago por tarjeta */
+
+.ped_fpag_pago {
+  text-align: center;
+}
+
+.ped_fpag_boton {
+
+background: #222 url(http://sites.google.com/site/zavaletaster/Home/overlay.png) repeat-x;
+display: inline-block;
+color: #FFF;
+text-decoration: none;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+position: relative;
+cursor:pointer;
+font-size:34px;
+padding: 8px 14px 9px;
+background-color: #2981E4;
+  
+}
+
+.ped_fpag_boton:hover {
+
+background-color: #2575CF; 
+color: #FFF;
+
+}
+
+.ped_fpag_boton:click {
+top: 1px;
+}
+
+
+/***************************************************************************************************************
+*************************************         estilo_shoponline.js         *************************************
+****************************************************************************************************************/
+

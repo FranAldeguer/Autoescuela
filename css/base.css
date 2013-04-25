@@ -1,26 +1,119 @@
-.registro_form_eti{
-	color: black;
-	float: left;
-}
-
-.registro_form_campo{
-	text-align: right;
-}
-
-.registro_fila{
-	/*width: 300px;*/
-	background-color: orange;
-}
-
-.form_btns{
-
-}
-
+/************************************
+ *            FORMULARIOS           *
+ ************************************/
+/* Campo en el que va dentro del formulario */
 .formulario{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:400px;
-    background-color:#FFCCFF;
-    text-align:center; 
+	display        : block;
+	margin-left    : auto;
+	margin-right   : auto;
+	width          : 350px;
+	text-align     : center;
+	vertical-align : text-top; 
 }
+
+/* Etiqueta del formulario */
+.registro_form_eti{
+	text-align       : left;
+	color            : black;
+	float            : left;
+	width            : 50%;
+	height           : 25px;
+}
+
+/* Inputs del formulario */
+.registro_form_campo{
+	text-align       : right;
+	width            : 50%;
+	height           : 25px;
+	float            : right;
+}
+
+/* Filas para alinear el campo */
+.registro_fila{
+	width : 350px;
+}
+
+/************************************
+ *      BOTONES DEL FORMULARIO      *
+ ************************************/
+.form_btn {
+	border-top            : 1px solid #000000;
+	background            : #000000;
+	background            : -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
+	background            : -webkit-linear-gradient(top, #000000, #000000);
+	background            : -moz-linear-gradient(top, #000000, #000000);
+	background            : -ms-linear-gradient(top, #000000, #000000);
+	background            : -o-linear-gradient(top, #000000, #000000);
+	padding               : 9px 18px;
+	-webkit-border-radius : 0px;
+	-moz-border-radius    : 0px;
+	border-radius         : 0px;
+	-webkit-box-shadow    : rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow       : rgba(0,0,0,1) 0 1px 0;
+	box-shadow            : rgba(0,0,0,1) 0 1px 0;
+	text-shadow           : rgba(0,0,0,.4) 0 1px 0;
+	color                 : #ffffff;
+	font-size             : 13px;
+	font-family           : Georgia, serif;
+	text-decoration       : none;
+	vertical-align        : middle;
+}
+
+.form_btn:hover {
+	border-top-color : #333333;
+	background       : #333333;
+	color            : #ffffff;
+}
+
+.form_btn:active {
+	border-top-color : #333333;
+	background       : #333333;
+}
+
+/************************************
+ *               TABLA              *
+ ************************************/
+
+.tbl_redondeada {
+	float                 : left;
+	width                 : 85%;
+	height                : auto;
+	margin-top            : 20px;
+	margin-bottom         : 50px;
+	margin-left           : 7%;
+	-moz-border-radius    : 10px; 		/* Firefox */
+	-webkit-border-radius : 10px; 		/* Chrome y Safari */
+	border                : black solid 2px;
+	overflow-y            : auto;
+}
+
+td{
+	cursor: pointer;
+}
+
+.cebra_1{
+	background-color: red;
+}
+
+.cebra_0{
+	background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

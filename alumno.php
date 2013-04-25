@@ -57,8 +57,8 @@
             </div>
             
             <div class="form_btns">
-                <button type="button" id="btninsert" onclick="insertar_modificar()">Insertar</button>
-	            <button type="reset" onclick="cancelar()">Cancelar</button>
+                <button type="button" class="form_btn" id="btninsert" onclick="insertar_modificar()">Insertar</button>
+	            <button type="reset" class="form_btn" onclick="cancelar()">Cancelar</button>
             </div>
                 
            
@@ -67,7 +67,7 @@
     </div>
     
     <div class="listado">
-        <table border = 1 cellspacing=0 cellpadding=2 align="center" id="listadotabla">
+        <table border = 1 cellspacing=0 cellpadding=2 align="center" id="listadotabla" class="tbl_redondeada">
             <?php
             	// TODO En vez de hacerlo por tabla, hacerlo por divs
                 //Esto muestra el encabezado de la tabla con los valores que se le pasan en el array de la clase Alumno
@@ -78,24 +78,26 @@
 
                 $listObj = Alumno::__getAlumnos();
                 //Con esto se puede usar el objeto del array
+                $i = 0;
                 foreach ($listObj as $obj){
                     //Crear los tr y le pone la id del objeto como id del tr
-                    $tabla.= "<tr id='".$obj->{'id'}."'>";
+                    $tabla.= "<tr id='".$obj->{'id'}."' class='cebra_".$i."'>";
                     foreach (Alumno::$arrList as $key => $value){
-                        //Aquí se rellenan los <td> con los datos del objeto
-                        //Y se le pone al class del <td> el nombre del valor que contiene'alert()'
-                        //if ($key == "id_prof"){
-                        	//$prof = Profesor::selecProf($obj->{$key});
-                        	//$tabla.="<td class='".$key."' style='cursor: pointer'  onclick= \"window.location='http://localhost/ProyectoAutoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\" value =".$prof->get_id().">".$prof->get_nombre()." ".$prof->get_apellidos()."</td>";
-                        //}else{
-							$tabla.="<td class='".$key."' style='cursor: pointer'  onclick= \"window.location='http://localhost/ProyectoAutoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\">".$obj->{$key}."</td>";
-						//}
-						
+						$tabla.="<td class='".$key."' onclick= \"window.location='http://localhost/ProyectoAutoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\">".$obj->{$key}."</td>";
                     }
-                    //Añade el botón de borrar y modificar
-                    $tabla.="<td align='center'><img src='img/borrar.jpg' onclick='borrar(".$obj->{'id'}.", \"".$obj->{'nombre'}."\", this)' height='25px' width='25px' style='cursor: pointer'></td>";
-                    $tabla.="<td align='center'><img src='img/modificar.png' onclick='cargardatos(".$obj->{'id'}.")' height='25px' width='25px' style='cursor: pointer'></td>";
+                    //Añadir botón de borrar
+                    $tabla.="   <td align='center'>
+                                    <img src='img/borrar.png' onclick='borrar(".$obj->{'id'}.", \"".$obj->{'nombre'}."\", this)' height='25px' width='25px'>
+                                </td>";
+                    //Añadir boton de modificar
+                    $tabla.="   <td align='center'>
+                                    <img src='img/modificar.png' onclick='cargardatos(".$obj->{'id'}.")' height='25px' width='25px'>
+                                </td>";
                     $tabla.="</tr>";
+                    
+                    //Cambiar la fila de color
+                    $i++;
+                    if($i==2) $i=0;
                 }
                 echo $tabla;
             ?>

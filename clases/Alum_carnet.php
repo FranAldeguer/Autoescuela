@@ -8,7 +8,14 @@ class Alum_carnet{
     public $terminado;
     static private $db;
     static public $arrList = Array('id'=>'Código', 'id_alumno'=>'Alumno', 'id_carnet'=>'Carnet', 'terminado'=>'¿Terminado?');
-
+	
+	/**
+	 * Constructor de la clase Alum_carnet
+	 * @param string $alu
+	 * @param string $car
+	 * @param string $ter
+	 * @param string $id
+	 */
     public function Alum_carnet($alu="", $car="", $ter="", $id=""){
         self::$db = new PDO('mysql:host=localhost;dbname=Autoescuela', 'root', 'root');
         $this->id_alumno = $alu;
@@ -16,7 +23,11 @@ class Alum_carnet{
         $this->terminado = $ter;
         $this->id = $id;
     }
-
+	
+    /**
+     * Función de para insertar
+     * @return string|number
+     */
     public function insertar(){
         //Funciona
         $sql= "INSERT INTO alum_carnet(id_alumno, id_carnet, terminado) VALUES('".$this->id_alumno."', '".$this->id_carnet."', '".$this->terminado."')";
@@ -32,6 +43,9 @@ class Alum_carnet{
         }
     }
 
+    /**
+     * Función para insertar
+     */
     public function eliminar(){
         //Funciona
         $sql = "DELETE FROM alum_carnet WHERE id = ".$this->id;

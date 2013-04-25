@@ -83,7 +83,7 @@
                     //Crear los tr y le pone la id del objeto como id del tr
                     $tabla.= "<tr id='".$obj->{'id'}."' class='cebra_".$i."'>";
                     foreach (Alumno::$arrList as $key => $value){
-						$tabla.="<td class='".$key."' onclick= \"window.location='http://localhost/ProyectoAutoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\">".$obj->{$key}."</td>";
+						$tabla.="<td class='".$key."' onclick= \"window.location='http://localhost/Autoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\">".$obj->{$key}."</td>";
                     }
                     //Añadir botón de borrar
                     $tabla.="   <td align='center'>

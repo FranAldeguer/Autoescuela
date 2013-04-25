@@ -60,9 +60,9 @@
                         //Y se le pone al class del <td> el nombre del valor que contiene'alert()'
                         //if ($key == "id_prof"){
                         	//$prof = Profesor::selecProf($obj->{$key});
-                        	//$tabla.="<td class='".$key."' style='cursor: pointer'  onclick= \"window.location='http://localhost/ProyectoAutoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\" value =".$prof->get_id().">".$prof->get_nombre()." ".$prof->get_apellidos()."</td>";
+                        	//$tabla.="<td class='".$key."' style='cursor: pointer'  onclick= \"window.location='http://localhost/Autoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\" value =".$prof->get_id().">".$prof->get_nombre()." ".$prof->get_apellidos()."</td>";
                         //}else{
-							$tabla.="<td class='".$key."' style='cursor: pointer'  onclick= \"window.location='http://localhost/ProyectoAutoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\">".$obj->{$key}."</td>";
+							$tabla.="<td class='".$key."' style='cursor: pointer'  onclick= \"window.location='http://localhost/Autoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\">".$obj->{$key}."</td>";
 						//}
 						
                     }

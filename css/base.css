@@ -92,15 +92,62 @@ td{
 }
 
 .cebra_1{
-	background-color: red;
+	background-color: white;
 }
 
 .cebra_0{
-	background-color: blue;
+	background-color: DeepSkyBlue;
 }
 
+/************************************
+ *          MENÚ ENCABEZADO         *
+ ************************************/
 
+.head_menu_btn {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 14.5px 29px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+.head_menu_btn:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+}
+.head_menu_btn:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+}
 
+.head_menu_div {
+	float: left;
+}
+
+.head_menu {
+	display          : block;
+	margin-left      : auto;
+	margin-right     : auto;
+	height           : 123px;
+	text-align       : center;
+	vertical-align   : text-top; 
+	background-color : red;
+}
 
 
 

@@ -62,7 +62,7 @@
             </div>
                 
            
-            <input type="hidden" id="inputid" name ="inputid" value="0">
+            <input type="text" id="inputid" name ="inputid" value="0">
         </form>
     </div>
     
@@ -86,20 +86,22 @@
 						$tabla.="<td class='".$key."' onclick= \"window.location='http://localhost/Autoescuela/Alumno_detalle.php?usuario=".$obj->{'id'}."'\">".$obj->{$key}."</td>";
                     }
                     //Añadir botón de borrar
-                    $tabla.="   <td align='center'>
-                                    <img src='img/borrar.png' onclick='borrar(".$obj->{'id'}.", \"".$obj->{'nombre'}."\", this)' height='25px' width='25px'>
-                                </td>";
+                    $tabla.="<td align='center'>";
+                    $tabla.="	<img src='img/borrar.png' onclick='borrar(".$obj->{'id'}.", \"".$obj->{'nombre'}."\", this)' height='25px' width='25px'>";
+                    $tabla.="</td>";
                     //Añadir boton de modificar
-                    $tabla.="   <td align='center'>
-                                    <img src='img/modificar.png' onclick='cargardatos(".$obj->{'id'}.")' height='25px' width='25px'>
-                                </td>";
+                    $tabla.="<td align='center'>";
+                    $tabla.="	<img src='img/modificar.png' onclick='cargardatos(".$obj->{'id'}.")' height='25px' width='25px'>";
+                    $tabla.="</td>";
                     $tabla.="</tr>";
                     
                     //Cambiar la fila de color
                     $i++;
                     if($i==2) $i=0;
+                    echo $i;
                 }
                 echo $tabla;
+                
             ?>
         </table>
     </div>

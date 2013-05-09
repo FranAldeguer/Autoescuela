@@ -58,7 +58,7 @@
             
             <div class="form_btns">
                 <button type="button" class="form_btn" id="btninsert" onclick="insertar_modificar()">Insertar</button>
-	            <button type="reset" class="form_btn" onclick="cancelar()">Cancelar</button>
+	            <button type="reset" class="form_btn" id="btnborrar" onclick="cancelar()">Cancelar</button>
             </div>
                 
            

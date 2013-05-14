@@ -1,17 +1,17 @@
 <?php
 include '../clases/Alumno.php';
-$id = $_POST['inputid'];
-
-$dni = $_POST['inputdni'];
-$nom = $_POST['inputnombre'];
-$ape = $_POST['inputapellidos'];
-$fnac = $_POST['inputfecha_nac'];
-$telf = $_POST['inputtelefono'];
-$mail = $_POST['inputmail'];
+$id      = $_POST['inputid'];
+$dni     = $_POST['inputdni'];
+$nom     = $_POST['inputnombre'];
+$ape     = $_POST['inputapellidos'];
+$fnac    = $_POST['inputfecha_nac'];
+$telf    = $_POST['inputtelefono'];
+$mail    = $_POST['inputmail'];
 $id_prof = $_POST['selectid_profesor'];
 
-$js = $_REQUEST['funcion']; //Esta variable comprueba a que función hay que ir (borrar, modificar…)
+$js        = $_REQUEST['funcion']; //Esta variable comprueba a que función hay que ir (borrar, modificar…)
 $id_borrar = $_REQUEST['id_borrar'];
+
 //Borrar un Alumno
 if($js == "borrar_registro"){
     $objBorrar = Alumno::__selecAlum($id_borrar);

@@ -1,5 +1,4 @@
 <?php 
-include("conf.php");
 
 class DB { 
     
@@ -24,7 +23,7 @@ class DB {
     public static function get(  ) { 
     	
         $host = "localhost";
-        $db   = "prueba";
+        $db   = "autoescuela2";
         $user = "root";
         $pass = "root";
             

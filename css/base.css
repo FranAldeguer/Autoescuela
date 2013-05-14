@@ -87,7 +87,7 @@
 	overflow-y            : auto;
 }
 
-td{
+.dedo{
 	cursor: pointer;
 }
 
@@ -137,16 +137,17 @@ td{
 
 .head_menu_div {
 	float: left;
+	margin-right : -8px;
+	pading : 10px;
 }
 
 .head_menu {
-	display          : block;
-	margin-left      : auto;
-	margin-right     : auto;
-	height           : 123px;
-	text-align       : center;
-	vertical-align   : text-top; 
-	background-color : red;
+	display        : block;
+	margin-left    : auto;
+	margin-right   : auto;
+	width          : 831px;
+	text-align     : center;
+	vertical-align : text-top; 
 }
 
 

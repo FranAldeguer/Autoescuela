@@ -5,7 +5,7 @@
     <body>
         <div class="head_menu">
 
-            <div class="head_menu_div"><button class="head_menu_btn" type="button" onclick="window.location='http://localhost/Autoescuela/Alumno_Insertar.php'">Alumnos</button></div>
+            <div class="head_menu_div"><button class="head_menu_btn" type="button" onclick="window.location='http://localhost/Autoescuela/alumno.php'">Alumnos</button></div>
             <div class="head_menu_div"><button class="head_menu_btn" type="button" onclick="window.location='http://localhost/Autoescuela/Profesor_Insertar.php'">Profesores</button></div>
             <div class="head_menu_div"><button class="head_menu_btn" type="button" onclick="window.location='http://localhost/Autoescuela/Carnet_Insertar.php'">Carnets</button></div>
             <div class="head_menu_div"><button class="head_menu_btn" type="button" onclick="window.location='http://localhost/Autoescuela/Entrega_Insertar.php'">Entrega</button></div>

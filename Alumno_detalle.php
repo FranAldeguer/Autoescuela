@@ -1,5 +1,5 @@
 <?php
-include 'clases/Alumno.php';
+/** include 'clases/Alumno.php';
 include 'clases/Carnet.php';
 include 'clases/Profesor.php';
 include 'clases/Alum_carnet.php';
@@ -13,7 +13,7 @@ include 'clases/ExamenTeorico.php';
 <body>
 	<input type="button" onclick ="window.location='Alumno_insertar.php'" value="Volver">
 	<?php 
-	$user = $_GET['usuario'];
+	$user = $_REQUEST['usuario'];
 	$alu = Alumno::__selecAlum($user);
 	//$alu->mostrar();
 	?>
@@ -80,4 +80,5 @@ include 'clases/ExamenTeorico.php';
 	</table>
 	
 </body>
-</html>
+</html>*/
+?>

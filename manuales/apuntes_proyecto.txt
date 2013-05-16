@@ -1,5 +1,8 @@
 ----- Apuntes proyecto -----
 
+-- Añadir columna a listado --
+
+
 -- Clases --
 
 *** FORMULARIO ***

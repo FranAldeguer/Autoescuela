@@ -1,5 +1,5 @@
 <?php
-include '../clases/Alumno.php';
+include '../clases/Calumno.php';
 $id      = $_POST['inputid'];
 $dni     = $_POST['inputdni'];
 $nom     = $_POST['inputnombre'];
@@ -9,13 +9,12 @@ $telf    = $_POST['inputtelefono'];
 $mail    = $_POST['inputmail'];
 $id_prof = $_POST['selectid_profesor'];
 
-$js        = $_REQUEST['funcion']; //Esta variable comprueba a que función hay que ir (borrar, modificar…)
+$accion        = $_REQUEST['funcion']; //Esta variable comprueba a que función hay que ir (borrar, modificar…)
 $id_borrar = $_REQUEST['id_borrar'];
 
 //Borrar un Alumno
-if($js == "borrar_registro"){
-    $objBorrar = Alumno::__selecAlum($id_borrar);
-    $objBorrar->eliminar();
+if($accion == "borrar_registro"){
+    Calumno::__delete($id_borrar);
     return;
 }else{
     //Insertar un nuevo alumno desde Alumnos_Insertar.php
@@ -23,22 +22,28 @@ if($js == "borrar_registro"){
         if($telf == ''){
             $telf = 0;
         }
-        $objInsertar = new Alumno($dni, $nom, $ape, $fnac, $telf, $mail);
-        $objInsertar->set_id_prof($id_prof);
+        $objInsertar = new Calumno();
+        $objInsertar->dni         = $dni;
+        $objInsertar->nombre      = $nom;
+        $objInsertar->apellidos   = $ape;
+        $objInsertar->fecha_nac   = $fnac;
+        $objInsertar->telefono    = $telf;
+        $objInsertar->mail        = $mail;
+        $objInsertar->id_profesor = $id_prof;
 
-        echo $objInsertar->insertar();
+        echo $objInsertar->insert();
     }
     //Modificar un Alumno
     if($id != 0){
-        $objModificar = Alumno::__selecAlum($id);
-        $objModificar->set_dni($dni);
-        $objModificar->set_nombre($nom);
-        $objModificar->set_apellidos($ape);
-        $objModificar->set_fecha_nac($fnac);
-        $objModificar->set_telefono($telf);
-        $objModificar->set_mail($mail);
-        $objModificar->set_id_prof($id_prof);
-        $objModificar->modificar();
+        $objModificar = Calumno::__getObj($id);
+        $objModificar->dni         = $dni;
+        $objModificar->nombre      = $nom;
+        $objModificar->apellidos   = $ape;
+        $objModificar->fecha_nac   = $fnac;
+        $objModificar->telefono    = $telf;
+        $objModificar->mail        = $mail;
+        $objModificar->id_profesor = $id_prof;
+        $objModificar->update();
     }
 }
 ?>

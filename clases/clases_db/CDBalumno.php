@@ -58,9 +58,11 @@ class CDBalumno{
 
 		}catch(Excepction $e){
 			//Muestra el mensaje de error de la excepción
-			echo $e->getMessage();
-
-			return 0;
+			$e->getMessage();
+			return false;
+		}catch (PDOException $e){
+			$e->getMessage();
+			return false;
 		}
 	}
 
@@ -132,7 +134,7 @@ class CDBalumno{
 			$q = DB::get()->exec($sql);
 
 			//Comprobación de errores
-			if($q != 1) throw new Exception("Error en la modificación");
+			if($q != 1) throw new Exception("No se ha modificado.");
 
 			return true;
 
@@ -140,7 +142,7 @@ class CDBalumno{
 
 			//Muestra el mensaje de error
 			echo $e->getMessage();
-
+			
 			return false;
 		}
 	}

@@ -4,7 +4,7 @@ require_once ("clases_db/CDBalumno.php");
 
 class Calumno extends CDBalumno{
 
-	static $arrList = Array('id' => 'id','dni' => 'dni','nombre' => 'nombre','apellidos' => 'apellidos','fecha_nac' => 'fecha_nac','telefono' => 'telefono','mail' => 'mail','id_profesor' => 'id_profesor','pass' => 'pass');
+	static $arrList = Array('dni' => 'DNI','nombre' => 'Nombre','apellidos' => 'Apellidos','fecha_nac' => 'Fecha de Nacimiento','telefono' => 'Telefono','mail' => 'Mail','id_profesor' => 'Código Profesor');
 
 	/**
 	 *Constructor de la clase Calumno

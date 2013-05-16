@@ -14,7 +14,7 @@
     include 'header_paneldecontrol.php';
     ?>
     <div class="formulario">
-        <form action="controles/Control_alumnos.php" method="post" align ="center" name ="forminsertar" id="forminsertar">
+        <form action="controles/Control_alumnos.php" method="post" name ="forminsertar" id="forminsertar">
             <h2>INSERTAR ALUMNO</h2>
             <div class = "registro_fila">
                 <div class = "registro_form_eti">DNI:</div>
@@ -62,7 +62,7 @@
             </div>
                 
            
-            <input type="text" id="inputid" name ="inputid" value="0">
+            <input type="hidden" id="inputid" name ="inputid" value="0">
         </form>
 
     </div>
@@ -100,11 +100,10 @@
                     //Cambiar la fila de color
                     $i++;
                     if($i==2) $i=0;
-                }
+                }               
+                $tabla.="</table>";
                 echo $tabla;
-                
             ?>
-        </table>
     </div>
 </body>
 </html>

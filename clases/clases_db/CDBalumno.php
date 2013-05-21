@@ -52,17 +52,27 @@ class CDBalumno{
 
 			//Pone el id correctamten al objeto insertado
 			$this->id = DB::get()->lastInsertId();
-
+			
+			$data = Array();
+			$data["succes"] = true;
+			$data["msg"] = "Insertado correctamente";
 			//Devuelve el ultimo id
-			return $this->id;
+			echo json_encode($data);
 
 		}catch(Excepction $e){
+			
 			//Muestra el mensaje de error de la excepción
-			$e->getMessage();
-			return false;
+			$data["msg"]    = $e->getMessage();
+			$data["succes"] = false;
+			echo json_encode($data);
+			
 		}catch (PDOException $e){
-			$e->getMessage();
-			return false;
+			
+			$data["msg"]    =$e->getMessage();
+			$data["succes"] = false;
+			if($e->getCode() == 23000) $data["msg"] = "El email ya existe";
+			echo json_encode($data);
+			
 		}
 	}
 
@@ -135,15 +145,23 @@ class CDBalumno{
 
 			//Comprobación de errores
 			if($q != 1) throw new Exception("No se ha modificado.");
+			$data["succes"] = true;
+			echo json_encode($data);
 
-			return true;
-
-		}catch (Exception $e){
-
-			//Muestra el mensaje de error
-			echo $e->getMessage();
+		}catch(Excepction $e){
 			
-			return false;
+			//Muestra el mensaje de error de la excepción
+			$data["msg"]=$e->getMessage();
+			$data["succes"]=false;
+			echo json_encode($data);
+			
+		}catch (PDOException $e){
+			
+			$data["msg"]=$e->getMessage();
+			if($e->getCode() == 23000) $data["msg"] = "El email ya existe";
+			$data["succes"]=false;
+			echo json_encode($data);
+			
 		}
 	}
 
@@ -158,15 +176,15 @@ class CDBalumno{
 		//Estanciar el objeto
 		$temp = new Calumno();
 		//Asignarle los valores que se le pasan
-		$temp->id= $arrValores["id"];
-		$temp->dni= $arrValores["dni"];
-		$temp->nombre= $arrValores["nombre"];
-		$temp->apellidos= $arrValores["apellidos"];
-		$temp->fecha_nac= $arrValores["fecha_nac"];
-		$temp->telefono= $arrValores["telefono"];
-		$temp->mail= $arrValores["mail"];
-		$temp->id_profesor= $arrValores["id_profesor"];
-		$temp->pass= $arrValores["pass"];
+		$temp->id          = $arrValores["id"];
+		$temp->dni         = $arrValores["dni"];
+		$temp->nombre      = $arrValores["nombre"];
+		$temp->apellidos   = $arrValores["apellidos"];
+		$temp->fecha_nac   = $arrValores["fecha_nac"];
+		$temp->telefono    = $arrValores["telefono"];
+		$temp->mail        = $arrValores["mail"];
+		$temp->id_profesor = $arrValores["id_profesor"];
+		$temp->pass        = $arrValores["pass"];
 		return $temp;
 	}
 
@@ -176,17 +194,16 @@ class CDBalumno{
 	 * Inicializa las propiedades del objeto
 	 */
 	private function ini(){
-		$this->id= "";
-		$this->dni= "";
-		$this->nombre= "";
-		$this->apellidos= "";
-		$this->fecha_nac= "0000-00-00";
-		$this->telefono= "0";
-		$this->mail= "";
-		$this->id_profesor= "";
-		$this->pass= "passwd";
+		$this->id          = "";
+		$this->dni         = "";
+		$this->nombre      = "";
+		$this->apellidos   = "";
+		$this->fecha_nac   = "0000-00-00";
+		$this->telefono    = "0";
+		$this->mail        = "";
+		$this->id_profesor = "";
+		$this->pass        = "passwd";
 	}
-
 
 
 	/**

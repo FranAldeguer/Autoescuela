@@ -71,7 +71,6 @@
     
         <table border = 1 cellspacing=0 cellpadding=2 align="center" id="listadotabla" class="tbl_redondeada">
             <?php
-            	// TODO En vez de hacerlo por tabla, hacerlo por divs
                 //Esto muestra el encabezado de la tabla con los valores que se le pasan en el array de la clase Alumno
                 foreach(Calumno::$arrList as $key => $value){
                     $tabla.="<th>".$value."</th>";

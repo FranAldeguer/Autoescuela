@@ -46,7 +46,11 @@ class CRandom {
         $this-> nombres[15]="Ramon" ;
         $this-> nombres[16]="Cesar" ;
         $this-> nombres[17]="Guillermo" ;
-       
+	$this-> nombres[18]="Lolo";
+	$this-> nombres[19]="Vero";
+       	$this-> nombres[20]="Marta";
+	$this-> nombres[21]="Adrian";
+	
         $this-> apellidos[0] = "Gomez" ;
         $this-> apellidos[1] = "Perez" ;
         $this-> apellidos[2] = "Abellan" ;

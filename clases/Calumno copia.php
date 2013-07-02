@@ -36,17 +36,6 @@ class Calumno extends CDBalumno{
 
 
 	/**
-	 * Funcion para eliminar un objeto
-	 * @return boolean
-	 */
-	public static function __delete($id){
-		//Llama al metodo estatico de borrar y le pasa el id del objeto actual
-		return Calumno::__getObj($id)->delete();
-	}
-
-
-
-	/**
 	 * Devuelve un listado con objetos  según los parametros que le pasemos
 	 * @param array $info
 	 * @param string $order
@@ -75,17 +64,17 @@ class Calumno extends CDBalumno{
 		$q = DB::get()->query($sql, PDO::FETCH_ASSOC);
 		$info["num"] = $q->rowCount();
 
-		//Creamos un array vacío
-		$arrReturn = Array();
+		//Creamos un array de pruebas vacío
+		$arrPru = Array();
 
 		//Recogemos los datos e inicializamos objetos con esos valores
 		//Cada objeto lo metemos dentro del array
 		foreach ($q as $cObj){
 			$temp = self::_inicializar($cObj);
-			$arrReturn[] = $temp;
+			$arrPru[] = $temp;
 		}
 
-		return $arrReturn;
+		return $arrPru;
 	}
 }
 ?>

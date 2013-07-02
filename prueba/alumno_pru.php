@@ -43,7 +43,7 @@ try{
 	echo "Modificaión : OK<br>";
 	
 	//Eliminar
-	$arrList2[0]->delete();
+	Calumno::__delete($arrList2[0]->id);
 	$arrList2 = Calumno::__getListado($info, "id", Array("nombre"=>"pepe paja"));
 	if($info["num"]==1)throw new Exception("Error al eliminar");
 	

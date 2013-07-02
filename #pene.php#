@@ -1,0 +1,14 @@
+<?php
+
+echo "Buenos dias, me llamo Fran";
+
+echo "<br>";
+$arr = Array("Buenos", "dias,", "me", "llamo", "Fran");
+
+adsfsdforeach($arr as $palabra){
+	echo $palabra." ";
+}
+echo "<br>";
+
+print_r (explode(" ", $arr);
+?>
